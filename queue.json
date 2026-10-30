@@ -75,16 +75,20 @@
   {
     "id": "reel05",
     "date": "2026-11-02",
-    "status": "ready",
+    "status": "published",
     "video": "reels/reel05.mp4",
     "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/reel05.mp4",
     "thumb_offset": 9000,
     "caption": "Продаёте много, а денег не остаётся? Проверьте маржу по каждому товару.\n\nB — закупка, C — цена продажи:\n\n=(C2-B2)/C2\n\nПоставьте формат «Процент» и подсветите красным всё, что ниже 20%. Сразу видно, на каких товарах вы работаете почти бесплатно.\n\nСохраните и перешлите тому, кто считает прибыль вручную.\n\nЯ делаю системы учёта на Google Таблицах для малого бизнеса в Сочи: остатки, продажи, отчёты — всё считается само. Напишите в Direct «ЗАДАЧА» — оценю бесплатно.",
-    "hashtags": "#googleтаблицы #маржа #малыйбизнес #сочи"
+    "hashtags": "#googleтаблицы #маржа #малыйбизнес #сочи",
+    "media_id": "17924021481223160",
+    "permalink": "https://www.instagram.com/reel/DfH04awD6Po/",
+    "published_date": "2026-10-30",
+    "cloud_test_id": "poweroff-20261030-1500"
   },
   {
     "id": "reel06",
-    "date": "2026-11-03",
+    "date": "2026-11-02",
     "status": "ready",
     "video": "reels/reel06.mp4",
     "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/reel06.mp4",
@@ -94,7 +98,7 @@
   },
   {
     "id": "reel07",
-    "date": "2026-11-05",
+    "date": "2026-11-03",
     "status": "ready",
     "video": "reels/reel07.mp4",
     "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/reel07.mp4",
@@ -104,7 +108,7 @@
   },
   {
     "id": "reel08",
-    "date": "2026-11-06",
+    "date": "2026-11-05",
     "status": "ready",
     "video": "reels/reel08.mp4",
     "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/reel08.mp4",
