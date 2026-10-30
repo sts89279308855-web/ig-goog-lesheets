@@ -83,15 +83,29 @@ def next_slot(q,today,horizon=8):
 def generate():
  from cloud_render import render
  bank=json.loads((ROOT/'content-bank.json').read_text(encoding='utf-8'));made=[]
+ topic_by_key={t['key']:t for t in bank}
+ def topic_hash(t):return hashlib.sha256(json.dumps(t,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
  for _ in range(int(os.environ.get('MAX_GENERATE','2'))):
-  q=queue();day,planned=next_slot(q,now().date())
+  q=queue();repair=None
+  for entry in sorted(q,key=lambda e:e.get('date','')):
+   t=topic_by_key.get(entry.get('source_topic'))
+   if entry.get('status')!='ready' or not t or entry.get('date','')<=now().date().isoformat():continue
+   previous_hash=entry.get('topic_hash')
+   if previous_hash is None:
+    oldspec,_=read_file('specs/'+entry['id']+'.json')
+    if oldspec:previous_hash=topic_hash({k:json.loads(oldspec).get(k) for k in t})
+   if previous_hash!=topic_hash(t):repair=entry;break
+  if repair:day=dt.date.fromisoformat(repair['date']);planned=repair
+  else:day,planned=next_slot(q,now().date())
   if day is None:break
   used={e.get('source_topic') for e in q};lesson=day.weekday() in (2,6)
   candidates=[t for t in bank if t['key'] not in used and (t['format']=='lesson')==lesson]
-  if planned:candidates=[t for t in candidates if t.get('reel_id')==planned['id']]
+  if repair:candidates=[topic_by_key[repair['source_topic']]]
+  elif planned:candidates=[t for t in candidates if t.get('reel_id')==planned['id']]
   if not candidates:raise RuntimeError('Reviewed topic bank needs replenishment for '+day.isoformat()+'. Published videos are never recycled.')
   topic=candidates[0];rid=planned['id'] if planned else 'auto-'+day.isoformat()+'-'+topic['key']
   work=ROOT/'build'/rid;video,checks=render(topic,work)
+  if any(x['id']==rid and x.get('status')=='published' for x in queue()):raise RuntimeError('Video became published during rendering; do not replace it')
   upload_path='reels/'+rid+'.mp4';raw=video.read_bytes();sha256=hashlib.sha256(raw).hexdigest()
   payload={'message':'Add rendered '+rid,'branch':'main','content':base64.b64encode(raw).decode()}
   existing=gh('contents/'+upload_path+'?ref=main')
@@ -104,7 +118,7 @@ def generate():
   pp='reels/'+rid+'-preview.jpg';old=gh('contents/'+pp+'?ref=main');payload={'message':'Save reel preview '+rid,'branch':'main','content':base64.b64encode(pbytes).decode()}
   if old:payload['sha']=old['sha']
   gh('contents/'+pp,'PUT',payload)
-  entry=dict(id=rid,date=day.isoformat(),status='ready',format=topic['format'],title=topic['title'],source_topic=topic['key'],video=upload_path,video_raw_url='https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/'+upload_path,caption=topic['caption'],hashtags=topic['hashtags'],thumb_offset=3000,validation=checks,sha256=sha256)
+  entry=dict(id=rid,date=day.isoformat(),status='ready',format=topic['format'],title=topic['title'],source_topic=topic['key'],topic_hash=topic_hash(topic),video=upload_path,video_raw_url='https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/'+upload_path,caption=topic['caption'],hashtags=topic['hashtags'],thumb_offset=3000,validation=checks,sha256=sha256)
   def update(old):
    current=json.loads(old)
    if any(x.get('status')=='published' and x['id']==rid for x in current):raise RuntimeError('Queue entry was published during rendering')
