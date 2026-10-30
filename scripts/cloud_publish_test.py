@@ -45,7 +45,7 @@ class MCP:
 
 def gh(path,method='GET',body=None):
  url='https://api.github.com/repos/'+OWNER+'/'+REPO+'/'+path
- h={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'instagram-cloud-test'}
+ h={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'instagram-cloud-test','Cache-Control':'no-cache'}
  data=None if body is None else json.dumps(body,ensure_ascii=False).encode()
  req=urllib.request.Request(url,data=data,headers=h,method=method)
  try:
@@ -58,13 +58,14 @@ def read_file(path):
  r=gh('contents/'+path+'?ref=main')
  return (base64.b64decode(r['content']).decode(),r['sha']) if r else (None,None)
 def change_file(path,transform,message):
- for attempt in range(3):
+ for attempt in range(5):
   old,sha=read_file(path);text=transform(old)
   body={'message':message,'branch':'main','content':base64.b64encode(text.encode()).decode()}
   if sha:body['sha']=sha
   try:return gh('contents/'+path,'PUT',body)
   except RuntimeError as e:
-   if str(e)!='GitHub HTTP 409' or attempt==2:raise
+   if str(e)!='GitHub HTTP 409' or attempt==4:raise
+   time.sleep(2**attempt)
  return None
 def state(**fields):
  base={'test_id':os.environ['TEST_ID'],'target_utc':os.environ['TARGET_UTC'],'container_id':os.environ['CONTAINER_ID'],'reel_id':os.environ['REEL_ID'],'run_url':os.environ['RUN_URL'],'updated_at':dt.datetime.now(UTC).isoformat()}
