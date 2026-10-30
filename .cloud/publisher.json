@@ -1,6 +1,35 @@
 {
-  "status": "failed",
-  "message": "Add the Composio Connect ck_ key as the GitHub Actions secret COMPOSIO_CONSUMER_KEY. The expired test token is not used.",
-  "updated_at": "2026-10-30T21:27:15.759625+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41090007890"
+  "status": "ready",
+  "authentication": "verified",
+  "time_zone": "Asia/Yekaterinburg",
+  "daily_time": "20:40",
+  "ready_queue": [
+    {
+      "id": "reel09",
+      "date": "2026-10-31",
+      "title": "reel09"
+    },
+    {
+      "id": "reel10",
+      "date": "2026-11-01",
+      "title": "Бланк по буквам: собираем формулу LET по шагам"
+    },
+    {
+      "id": "reel06",
+      "date": "2026-11-02",
+      "title": "reel06"
+    },
+    {
+      "id": "reel07",
+      "date": "2026-11-03",
+      "title": "reel07"
+    },
+    {
+      "id": "reel08",
+      "date": "2026-11-05",
+      "title": "reel08"
+    }
+  ],
+  "updated_at": "2026-10-30T23:04:46.482937+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41103710668"
 }
