@@ -1,4 +1,5 @@
-import datetime as dt,json,unittest
+import datetime as dt,json,unittest,tempfile,types,sys
+from pathlib import Path
 from unittest.mock import Mock,patch
 import cloud_pipeline as p
 
@@ -42,5 +43,26 @@ class PublicationSafety(unittest.TestCase):
  def test_incomplete_media_response_cannot_be_treated_as_empty_account(self):
   self.client.tool.return_value={}
   with self.assertRaisesRegex(RuntimeError,'Incomplete'):p.recent(self.client)
+
+class RegenerationSafety(unittest.TestCase):
+ def setUp(self):
+  workspace=Path(__file__).resolve().parent
+  temp=tempfile.TemporaryDirectory(dir=workspace)
+  self.root=Path(temp.name).resolve();assert self.root.is_relative_to(workspace)
+  self.addCleanup(temp.cleanup)
+  self.topic={'key':'reviewed-topic','format':'short','caption':'Reviewed caption','title':'Reviewed example','reel_id':None}
+  (self.root/'content-bank.json').write_text(json.dumps([self.topic]))
+  self.renderer=Mock(return_value=(self.root/'unused.mp4',{'duration':40}))
+  self.entry={'id':'future-video','status':'ready','date':'2026-10-31','source_topic':'reviewed-topic','topic_hash':'old-reviewed-version'}
+  self.patches=[patch.object(p,'ROOT',self.root),patch.object(p,'now',return_value=dt.datetime(2026,10,30,23,0,tzinfo=p.TZ)),patch.object(p,'gh'),patch.object(p,'status'),patch.dict(sys.modules,{'cloud_render':types.SimpleNamespace(render=self.renderer)})]
+  for item in self.patches:item.start();self.addCleanup(item.stop)
+ def test_published_video_is_not_selected_for_regeneration(self):
+  entries=[dict(self.entry,status='published')]+[{'id':'scheduled-'+str(i),'status':'ready','date':(dt.date(2026,10,30)+dt.timedelta(days=i)).isoformat()} for i in range(1,9)]
+  with patch.object(p,'queue',return_value=entries):p.generate()
+  self.renderer.assert_not_called();p.gh.assert_not_called()
+ def test_video_published_during_render_is_not_overwritten(self):
+  with patch.object(p,'queue',side_effect=[[self.entry],[dict(self.entry,status='published')]]):
+   with self.assertRaisesRegex(RuntimeError,'do not replace'):p.generate()
+  self.renderer.assert_called_once();p.gh.assert_not_called()
 
 if __name__=='__main__':unittest.main()
