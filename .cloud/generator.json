@@ -1,6 +1,6 @@
 {
   "status": "failed",
-  "message": "Command '['edge-tts', '--voice', 'ru-RU-SvetlanaNeural', '--rate=+18%', '--text', 'На листе Прайс два столбца: товар и цена. На листе Заказ в А два напишите Кофе. Формулу вводим в Б два.', '--write-media', '/home/runner/work/ig-goog-lesheets/ig-goog-lesheets/build/reel11/1.mp3']' returned non-zero exit status 1.",
-  "updated_at": "2026-10-30T20:47:47.607502+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41083892226"
+  "message": "Video duration outside teaching format: 91.29166666666667",
+  "updated_at": "2026-10-30T20:50:23.567001+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41084247506"
 }
