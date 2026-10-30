@@ -39,5 +39,8 @@ class PublicationSafety(unittest.TestCase):
   with patch.object(p,'recent',return_value=[]),patch.object(p,'queue',return_value=[dict(self.entry,status='planned')]):
    with self.assertRaisesRegex(RuntimeError,'No ready'):p.publish()
   self.client.tool.assert_not_called()
+ def test_incomplete_media_response_cannot_be_treated_as_empty_account(self):
+  self.client.tool.return_value={}
+  with self.assertRaisesRegex(RuntimeError,'Incomplete'):p.recent(self.client)
 
 if __name__=='__main__':unittest.main()
