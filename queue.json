@@ -165,5 +165,30 @@
     },
     "sha256": "938f843fe5b1592be3612a833e135e9aa97f595103e8c128d2da34e7f9f7c659",
     "topic_hash": "8cdc4a013390112c5b165a523e794aeec5c0909cefdf67d50aef3d7b9bc91b32"
+  },
+  {
+    "id": "auto-2026-11-07-average-weekday",
+    "date": "2026-11-07",
+    "status": "ready",
+    "format": "short",
+    "title": "Средний чек за понедельник",
+    "source_topic": "average-weekday",
+    "topic_hash": "d09a4b1ff87ce2d3653ab7eecf4382cf7326cad8c85581e275d60514a09a9c50",
+    "video": "reels/auto-2026-11-07-average-weekday.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-07-average-weekday.mp4",
+    "caption": "Средний чек за понедельник\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ A2:A5 запишите Пн, Вт, Пн, Пн. В C2:C5 — 600, 400, 900, 1200.\n\n=AVERAGEIF(A2:A5;\"Пн\";C2:C5)\n\n(600 + 900 + 1200) / 3 = 900 рублей.\n\nОдна строка здесь — один чек. Если строки содержат позиции заказа, сначала соберите полные чеки. При отсутствии совпадений получится ошибка деления на ноль.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 48.12,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "da3313d682a49668639685d4a3182b387af383ea5ac7bce072c7d39f93a3f8ea"
   }
 ]
