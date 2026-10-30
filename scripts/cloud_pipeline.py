@@ -40,6 +40,10 @@ def audit():
  if auth!='verified':raise RuntimeError('Persistent cloud publishing is waiting for COMPOSIO_CONSUMER_KEY')
 def publish():
  m=connection();day=now().date().isoformat();media=recent(m)
+ for entry in queue():
+  if entry.get('status')!='ready':continue
+  match=next((v for v in media if v.get('caption')==entry.get('caption','').replace('\\n','\n')),None)
+  if match:finish(entry,match)
  if any(dt.datetime.fromisoformat(v['timestamp'].replace('Z','+00:00')).astimezone(TZ).date().isoformat()==day for v in media):
   status('publisher',status='skipped_already_posted_today',date=day);return
  if not (20*60+40<=now().hour*60+now().minute<=22*60+40):raise RuntimeError('Outside the daily publication window')
