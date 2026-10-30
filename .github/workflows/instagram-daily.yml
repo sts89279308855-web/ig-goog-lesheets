@@ -1,0 +1,36 @@
+name: Instagram daily publishing
+on:
+  schedule:
+    - cron: '40 15 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Audit access or publish the due reel
+        type: choice
+        default: audit
+        options: [audit, publish]
+permissions:
+  contents: write
+concurrency:
+  group: instagram-daily-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      COMPOSIO_CONSUMER_KEY: ${{ secrets.COMPOSIO_CONSUMER_KEY }}
+      RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      MODE: ${{ inputs.mode || 'publish' }}
+    steps:
+      - name: Download pinned source
+        env:
+          REPO: ${{ github.repository }}
+          COMMIT: ${{ github.sha }}
+        run: |
+          mkdir -p scripts
+          curl -fsSL "https://raw.githubusercontent.com/$REPO/$COMMIT/scripts/cloud_publish_test.py" -o scripts/cloud_publish_test.py
+          curl -fsSL "https://raw.githubusercontent.com/$REPO/$COMMIT/scripts/cloud_pipeline.py" -o scripts/cloud_pipeline.py
+      - name: Publish once or audit
+        run: python3 -u scripts/cloud_pipeline.py "$MODE"
