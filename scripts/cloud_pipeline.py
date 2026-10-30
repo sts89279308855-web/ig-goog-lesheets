@@ -18,7 +18,10 @@ def connection():
  body=json.loads(next(c['text'] for c in r['content'] if c.get('type')=='text'))
  m.tool_session=body['data']['session']['id'];profile(m)
  return m
-def recent(m):return m.tool('INSTAGRAM_GET_IG_USER_MEDIA',{'ig_user_id':'me','limit':25,'fields':'id,caption,permalink,timestamp'}).get('data',[])
+def recent(m):
+ data=m.tool('INSTAGRAM_GET_IG_USER_MEDIA',{'ig_user_id':'me','limit':7,'fields':'id,caption,permalink,timestamp'})
+ if not isinstance(data.get('data'),list):raise RuntimeError('Incomplete recent-media response; refusing to publish')
+ return data['data']
 def finish(entry,media):
  day=dt.datetime.fromisoformat(media['timestamp'].replace('Z','+00:00')).astimezone(TZ).date().isoformat()
  save_json('.cloud/publications/'+day+'.json',dict(status='published',reel_id=entry['id'],media_id=media['id'],permalink=media['permalink'],published_at=media['timestamp']),'Confirm published Instagram media')
