@@ -1,0 +1,49 @@
+name: Instagram cloud test
+run-name: Instagram cloud test ${{ inputs.test_id }}
+on:
+  workflow_dispatch:
+    inputs:
+      target_utc:
+        description: Publication time in UTC
+        required: true
+        type: string
+      container_id:
+        description: Prepared Instagram media container
+        required: true
+        type: string
+      reel_id:
+        description: Ready queue entry
+        default: reel05
+        required: true
+        type: string
+      test_id:
+        description: Unique one-off test identifier
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: instagram-cloud-test
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      COMPOSIO_MCP_TOKEN: ${{ secrets.COMPOSIO_CLOUD_TEST_ACCESS }}
+      GH_TOKEN: ${{ github.token }}
+      TARGET_UTC: ${{ inputs.target_utc }}
+      CONTAINER_ID: ${{ inputs.container_id }}
+      REEL_ID: ${{ inputs.reel_id }}
+      TEST_ID: ${{ inputs.test_id }}
+      RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      ACCESS_EXPIRES_AT_MS: '1793373566000'
+    steps:
+      - name: Download pinned runner
+        env:
+          SCRIPT_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/scripts/cloud_publish_test.py
+        run: curl --fail --silent --show-error --location "$SCRIPT_URL" --output cloud_publish_test.py
+      - name: Verify cloud access and record waiting state
+        run: python3 -u cloud_publish_test.py --preflight
+      - name: Wait and publish once
+        run: python3 -u cloud_publish_test.py --run
