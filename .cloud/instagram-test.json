@@ -1,0 +1,11 @@
+{
+  "test_id": "poweroff-20261030-1500",
+  "target_utc": "2026-10-30T15:00:00Z",
+  "container_id": "18023616413744981",
+  "reel_id": "reel05",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41074307263",
+  "updated_at": "2026-10-30T14:44:39.851653+00:00",
+  "status": "waiting",
+  "verified_account": "goog.lesheets",
+  "message": "Cloud runner verified; waiting for the publication time."
+}
