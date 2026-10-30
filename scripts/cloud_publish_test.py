@@ -37,6 +37,7 @@ class MCP:
   if r.get('isError'):raise RuntimeError('MCP tool failed: '+name)
   result=json.loads(next(c['text'] for c in r['content'] if c.get('type')=='text'))
   entry=result.get('data',{}).get('results',[{}])[0].get('response',{})
+  if 'data' not in entry:raise RuntimeError('Incomplete provider response; refusing to continue: '+name)
   data=entry.get('data',{})
   if not entry.get('successful') or data.get('http_error') or int(data.get('status_code',200))>=400:
    raise RuntimeError('Provider tool failed: '+name)
