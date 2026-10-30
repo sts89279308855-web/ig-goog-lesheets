@@ -32,5 +32,8 @@ jobs:
           mkdir -p scripts
           curl -fsSL "https://raw.githubusercontent.com/$REPO/$COMMIT/scripts/cloud_publish_test.py" -o scripts/cloud_publish_test.py
           curl -fsSL "https://raw.githubusercontent.com/$REPO/$COMMIT/scripts/cloud_pipeline.py" -o scripts/cloud_pipeline.py
+          curl -fsSL "https://raw.githubusercontent.com/$REPO/$COMMIT/scripts/test_cloud_pipeline.py" -o scripts/test_cloud_pipeline.py
+      - name: Verify duplicate-publication protections
+        run: python3 scripts/test_cloud_pipeline.py
       - name: Publish once or audit
         run: python3 -u scripts/cloud_pipeline.py "$MODE"
