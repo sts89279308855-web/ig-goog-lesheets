@@ -140,5 +140,29 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "8eafbe32aa7f9aed7c02c8d4c0489ba699476427ee1b6deca79e75ed0d90d0ab"
+  },
+  {
+    "id": "auto-2026-11-06-countif-0",
+    "date": "2026-11-06",
+    "status": "ready",
+    "format": "short",
+    "title": "Сколько заказов у Анна?",
+    "source_topic": "countif-0",
+    "video": "reels/auto-2026-11-06-countif-0.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-06-countif-0.mp4",
+    "caption": "Сколько заказов у Анна?\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ B2:B4 запишите Анна, Другой, Анна. В E2 — Анна.\n\n=COUNTIF(B2:B4;E2)\n\nПолучаем 2 заказа. Замените E2 на Другой — будет 1.\n\nУчитываются совпадения записей, а не уникальные клиенты. Для надёжного учёта лучше использовать ID клиента, а не имя.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 42.58,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "5f17d82d604ba8334e0143ea26256b3001468128919f33090661607edecc017a"
   }
 ]
