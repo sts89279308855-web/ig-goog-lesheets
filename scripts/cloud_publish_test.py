@@ -10,14 +10,15 @@ STATE_PATH='.cloud/instagram-test.json'
 UTC=dt.timezone.utc
 
 class MCP:
- def __init__(self,token):
-  self.token=token;self.sid=None;self.counter=0
+ def __init__(self,token,consumer=False):
+  self.token=token;self.consumer=consumer;self.sid=None;self.counter=0;self.tool_session='play'
   r=self.request('initialize',{'protocolVersion':'2025-03-26','capabilities':{},'clientInfo':{'name':'instagram-cloud-test','version':'1.0'}})
   self.version=r.get('result',{}).get('protocolVersion','2025-03-26')
  def request(self,method,params):
   self.counter+=1
   body=json.dumps({'jsonrpc':'2.0','id':self.counter,'method':method,'params':params}).encode()
-  h={'Authorization':'Bearer '+self.token,'Content-Type':'application/json','Accept':'application/json, text/event-stream'}
+  h={'Content-Type':'application/json','Accept':'application/json, text/event-stream'}
+  h['x-consumer-api-key' if self.consumer else 'Authorization']=self.token if self.consumer else 'Bearer '+self.token
   if self.sid:h['Mcp-Session-Id']=self.sid
   if hasattr(self,'version'):h['MCP-Protocol-Version']=self.version
   req=urllib.request.Request('https://connect.composio.dev/mcp',data=body,headers=h,method='POST')
@@ -32,7 +33,7 @@ class MCP:
   if 'error' in response:raise RuntimeError('MCP request rejected')
   return response
  def tool(self,name,args):
-  r=self.request('tools/call',{'name':'COMPOSIO_MULTI_EXECUTE_TOOL','arguments':{'session_id':'play','current_step':'CLOUD_TEST','sync_response_to_workbench':False,'tools':[{'tool_slug':name,'account':ACCOUNT,'arguments':args}]}})['result']
+  r=self.request('tools/call',{'name':'COMPOSIO_MULTI_EXECUTE_TOOL','arguments':{'session_id':self.tool_session,'current_step':'CLOUD_PUBLISH','sync_response_to_workbench':False,'tools':[{'tool_slug':name,'account':ACCOUNT,'arguments':args}]}})['result']
   if r.get('isError'):raise RuntimeError('MCP tool failed: '+name)
   result=json.loads(next(c['text'] for c in r['content'] if c.get('type')=='text'))
   entry=result.get('data',{}).get('results',[{}])[0].get('response',{})
