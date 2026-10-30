@@ -1,5 +1,5 @@
 """Render reviewed teaching templates; fail closed on layout/audio errors."""
-import array, functools, json, math, os, subprocess, wave
+import array, functools, json, math, os, subprocess, time, wave
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 try:
@@ -73,7 +73,14 @@ def render(topic,outdir):
  for i,s in enumerate(scenes):
   mp3=outdir/f'{i}.mp3'
   args=['edge-tts','--voice','ru-RU-SvetlanaNeural','--rate=+18%','--text',s['voice'],'--write-media',str(mp3)]
-  subprocess.run(args,check=True,capture_output=True,timeout=90)
+  for attempt in range(4):
+   try:r=subprocess.run(args,capture_output=True,timeout=90)
+   except subprocess.TimeoutExpired:r=None
+   if r is not None and r.returncode==0 and mp3.exists() and mp3.stat().st_size>1000:break
+   reason='timeout' if r is None else next((v for v in ['NoAudioReceived','403','429'] if v in r.stderr.decode(errors='replace')),'service_error')
+   if attempt==3:raise RuntimeError('Speech synthesis failed at scene '+str(i+1)+': '+reason)
+   print('Retrying speech scene',i+1,'after',reason,flush=True);time.sleep([3,10,25][attempt])
+  time.sleep(1)
   raw=subprocess.run([FF,'-v','error','-i',str(mp3),'-f','s16le','-ac','2','-ar','44100','-'],check=True,capture_output=True).stdout
   samples=array.array('h',raw)
   if not samples or max(map(abs,samples[::100]))<200:raise ValueError('Speech is missing or silent')
