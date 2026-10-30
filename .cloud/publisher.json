@@ -1,45 +1,6 @@
 {
-  "status": "ready",
-  "authentication": "verified",
-  "time_zone": "Asia/Yekaterinburg",
-  "daily_time": "20:40",
-  "ready_queue": [
-    {
-      "id": "reel09",
-      "date": "2026-10-31",
-      "title": "reel09"
-    },
-    {
-      "id": "reel10",
-      "date": "2026-11-01",
-      "title": "Бланк по буквам: собираем формулу LET по шагам"
-    },
-    {
-      "id": "reel06",
-      "date": "2026-11-02",
-      "title": "reel06"
-    },
-    {
-      "id": "reel07",
-      "date": "2026-11-03",
-      "title": "reel07"
-    },
-    {
-      "id": "reel08",
-      "date": "2026-11-05",
-      "title": "reel08"
-    },
-    {
-      "id": "reel11",
-      "date": "2026-11-04",
-      "title": "ВПР: цена без ошибок"
-    },
-    {
-      "id": "auto-2026-11-06-countif-0",
-      "date": "2026-11-06",
-      "title": "Сколько заказов у Анна?"
-    }
-  ],
-  "updated_at": "2026-10-30T23:09:54.242108+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41104477882"
+  "status": "skipped_already_posted_today",
+  "date": "2026-10-30",
+  "updated_at": "2026-10-30T23:16:35.039377+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41105492724"
 }
