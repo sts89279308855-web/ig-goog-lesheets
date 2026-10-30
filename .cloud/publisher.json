@@ -1,6 +1,6 @@
 {
   "status": "failed",
-  "message": "Persistent cloud publishing is waiting for COMPOSIO_CONSUMER_KEY",
-  "updated_at": "2026-10-30T20:44:21.809457+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41083447951"
+  "message": "Add the Composio Connect ck_ key as the GitHub Actions secret COMPOSIO_CONSUMER_KEY. The expired test token is not used.",
+  "updated_at": "2026-10-30T21:27:15.759625+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41090007890"
 }
