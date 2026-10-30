@@ -90,9 +90,18 @@ def render(topic,outdir):
  if lesson and sum(durations)<60:
   extra=60-sum(durations);durations[-1]+=extra;chunks[-1]+=b'\0'*round(extra*176400)
  length=sum(durations)
+ tempo=1.0
+ if lesson and 90<length<=98.5:
+  tempo=length/88
+  durations=[round(d/tempo*FPS)/FPS for d in durations]
+  length=sum(durations)
  if not (60<=length<=90 if lesson else 20<=length<=60):raise ValueError('Video duration outside teaching format: '+str(length))
  wav=outdir/'voice.wav'
  with wave.open(str(wav),'wb') as f:f.setnchannels(2);f.setsampwidth(2);f.setframerate(44100);f.writeframes(b''.join(chunks))
+ if tempo>1:
+  sped=outdir/'voice-paced.wav'
+  subprocess.run([FF,'-v','error','-y','-i',str(wav),'-af','atempo='+str(tempo),str(sped)],check=True,capture_output=True)
+  wav=sped
  out=outdir/'video.mp4';log=outdir/'ffmpeg.log'
  with log.open('w') as err:
   p=subprocess.Popen([FF,'-y','-f','rawvideo','-vcodec','rawvideo','-pix_fmt','rgb24','-s','720x1280','-r',str(FPS),'-i','-','-i',str(wav),'-c:v','libx264','-preset','veryfast','-crf','22','-pix_fmt','yuv420p','-threads','2','-c:a','aac','-b:a','128k','-movflags','+faststart','-shortest',str(out)],stdin=subprocess.PIPE,stderr=err)
@@ -111,6 +120,6 @@ def render(topic,outdir):
  streams=probe['streams'];v=next(x for x in streams if x['codec_type']=='video');a=next(x for x in streams if x['codec_type']=='audio')
  if (v['width'],v['height'])!=(720,1280) or abs(float(probe['format']['duration'])-length)>.3:raise ValueError('Video verification failed')
  if out.stat().st_size>90*1024*1024:raise ValueError('Video exceeds repository upload limit')
- check={'duration':round(length,2),'width':720,'height':1280,'audio':a['codec_name'],'layout_checks':'passed','voice':'ru-RU-SvetlanaNeural','synthetic_media_disclosed':True}
+ check={'duration':round(length,2),'width':720,'height':1280,'audio':a['codec_name'],'layout_checks':'passed','voice':'ru-RU-SvetlanaNeural','speech_tempo':round(tempo,3),'synthetic_media_disclosed':True}
  (outdir/'validation.json').write_text(json.dumps(check,indent=2))
  return out,check
