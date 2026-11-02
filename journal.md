@@ -23,3 +23,6 @@
 
 - 2026-11-01 — облачная публикация reel10: https://www.instagram.com/reel/DfNIwuWivr3/
   media_id=18113439626236002
+
+- 2026-11-02 — облачная публикация reel06: https://www.instagram.com/reel/DfPuz1iggu7/
+  media_id=18098346647668254
