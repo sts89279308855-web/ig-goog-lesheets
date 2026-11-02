@@ -1,6 +1,9 @@
 {
-  "status": "failed",
-  "message": "Video duration outside teaching format: 98.79166666666667",
-  "updated_at": "2026-11-02T08:09:08.076976+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41381412391"
+  "status": "running",
+  "generated": [
+    "auto-2026-11-08-sumifs-0"
+  ],
+  "stock_days": 8,
+  "updated_at": "2026-11-02T21:27:04.760140+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41481172870"
 }
