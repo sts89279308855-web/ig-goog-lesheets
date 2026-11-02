@@ -1,7 +1,6 @@
 {
-  "status": "published",
-  "reel_id": "reel06",
-  "permalink": "https://www.instagram.com/reel/DfPuz1iggu7/",
-  "updated_at": "2026-11-02T21:26:12.850520+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41481241455"
+  "status": "failed",
+  "message": "Outside the daily publication window",
+  "updated_at": "2026-11-03T04:13:33.075682+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41543672675"
 }
