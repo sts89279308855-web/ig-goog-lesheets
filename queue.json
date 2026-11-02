@@ -224,5 +224,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "9dda3e94d6a43798662f473487d5ffdc19a3bf4ecc495cff70b6156916c4a714"
+  },
+  {
+    "id": "auto-2026-11-09-filter-overdue",
+    "date": "2026-11-09",
+    "status": "ready",
+    "format": "short",
+    "title": "Просроченные счета на отдельном листе",
+    "source_topic": "filter-overdue",
+    "topic_hash": "a11aef4da15fb387769369154a2ec7f9e3bb51bb9c6084f1778489d50a242a51",
+    "video": "reels/auto-2026-11-09-filter-overdue.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-09-filter-overdue.mp4",
+    "caption": "Просроченные счета на отдельном листе\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ A1:C4 создайте заголовки и три строки как в примере. Формулу разместите в E2.\n\n=IFERROR(FILTER(A2:B4;C2:C4=\"Просрочен\");\"Нет просрочек\")\n\nВ результате остаются Счёт 1 и Счёт 3, суммы 1200 и 600.\n\nОставьте E2:F4 свободными для результата. Диапазон и условие должны иметь одинаковое число строк. IFERROR также скрывает другие ошибки — сначала проверьте FILTER отдельно.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 46.92,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "c1b5e30ecdbf827199a336f428ecfa85c55798f98bcd1f3026e774e770b7edfa"
   }
 ]
