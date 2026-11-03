@@ -249,5 +249,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "c1b5e30ecdbf827199a336f428ecfa85c55798f98bcd1f3026e774e770b7edfa"
+  },
+  {
+    "id": "auto-2026-11-10-trim-clean",
+    "date": "2026-11-10",
+    "status": "ready",
+    "format": "short",
+    "title": "Лишние пробелы портят поиск",
+    "source_topic": "trim-clean",
+    "topic_hash": "f418a28af5cf4bf63f0695451e1327fd30241d45f038ac8564c5c43a69f11747",
+    "video": "reels/auto-2026-11-10-trim-clean.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-10-trim-clean.mp4",
+    "caption": "Лишние пробелы портят поиск\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ A2 запишите текст с обычными пробелами: два пробела, Кофе, три пробела, молотый, два пробела. В B2 разместите формулу.\n\n=TRIM(A2)\n\nВ B2 получаем «Кофе молотый» — без пробелов по краям и с одним между словами.\n\nTRIM очищает обычные пробелы. Неразрывный пробел из сайта может потребовать SUBSTITUTE с CHAR(160); сначала определите символ.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 46.38,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "44d7cd1598bf74493fe518668d5a8173fd2537fee1ba27bdc5683b272b97fff8"
   }
 ]
