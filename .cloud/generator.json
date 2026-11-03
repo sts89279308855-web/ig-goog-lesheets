@@ -1,11 +1,9 @@
 {
-  "status": "generated",
+  "status": "running",
   "generated": [
-    "auto-2026-11-08-sumifs-0",
-    "auto-2026-11-09-filter-overdue"
+    "auto-2026-11-10-trim-clean"
   ],
   "stock_days": 8,
-  "remaining_topics": 18,
-  "updated_at": "2026-11-02T21:28:01.272404+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41481172870"
+  "updated_at": "2026-11-03T14:43:15.797886+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/41613063411"
 }
