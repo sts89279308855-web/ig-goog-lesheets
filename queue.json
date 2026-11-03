@@ -274,5 +274,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "44d7cd1598bf74493fe518668d5a8173fd2537fee1ba27bdc5683b272b97fff8"
+  },
+  {
+    "id": "auto-2026-11-11-weighted-average",
+    "date": "2026-11-11",
+    "status": "ready",
+    "format": "lesson",
+    "title": "Средняя цена с учётом количества",
+    "source_topic": "weighted-average",
+    "topic_hash": "d8ecd975b6cf152b374add04ef0f7dab735fad178a69fdfa6231ef2e59b3c886",
+    "video": "reels/auto-2026-11-11-weighted-average.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-11-weighted-average.mp4",
+    "caption": "Средняя цена с учётом количества\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ B2:B4 введите количества 10, 20, 10. В C2:C4 — цены 100, 130, 160.\nSUMPRODUCT перемножает количество и цену каждой строки и складывает результаты.\nSUM(B2:B4) даёт общее количество. Делим общую стоимость на количество.\n\n=SUMPRODUCT(B2:B4;C2:C4)/SUM(B2:B4)\n\nОбщая стоимость 5200, количество 40. Средняя цена — 130.\n\nПри нулевом общем количестве делить нельзя. Не смешивайте разные единицы измерения.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая. Визуальные вставки подготовлены с помощью ИИ по моим фотографиям; это анимированные изображения.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 74.38,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "0274d7142c8708665c3a2c02f385126db4e71bbfcee45b2b7d81ffbc529fa723"
   }
 ]
