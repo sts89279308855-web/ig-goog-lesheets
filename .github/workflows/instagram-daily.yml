@@ -1,7 +1,9 @@
 name: Instagram daily publishing
 on:
   schedule:
-    - cron: '40 15 * * *'
+    - cron: '40,59 15 * * *'
+    - cron: '19,39,59 16 * * *'
+    - cron: '19,39 17 * * *'
   workflow_dispatch:
     inputs:
       mode:
