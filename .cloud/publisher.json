@@ -1,7 +1,6 @@
 {
-  "status": "published",
-  "reel_id": "reel08",
-  "permalink": "https://www.instagram.com/reel/DfYAdkPAjkh/",
-  "updated_at": "2026-11-06T02:34:20.327835+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42113722254"
+  "status": "skipped_already_posted_today",
+  "date": "2026-11-06",
+  "updated_at": "2026-11-06T03:04:45.531797+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42118321269"
 }
