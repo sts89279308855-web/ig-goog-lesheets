@@ -1,60 +1,7 @@
 {
-  "status": "ready",
-  "authentication": "verified",
-  "time_zone": "Asia/Yekaterinburg",
-  "daily_time": "20:40",
-  "ready_queue": [
-    {
-      "id": "reel07",
-      "date": "2026-11-12",
-      "title": "reel07"
-    },
-    {
-      "id": "reel08",
-      "date": "2026-11-05",
-      "title": "reel08"
-    },
-    {
-      "id": "reel11",
-      "date": "2026-11-04",
-      "title": "ВПР: цена без ошибок"
-    },
-    {
-      "id": "auto-2026-11-06-countif-0",
-      "date": "2026-11-06",
-      "title": "Сколько заказов у Анны?"
-    },
-    {
-      "id": "auto-2026-11-07-average-weekday",
-      "date": "2026-11-07",
-      "title": "Средний чек за понедельник"
-    },
-    {
-      "id": "auto-2026-11-08-sumifs-0",
-      "date": "2026-11-08",
-      "title": "Отчёт кофейни: менеджер и период"
-    },
-    {
-      "id": "auto-2026-11-09-filter-overdue",
-      "date": "2026-11-09",
-      "title": "Просроченные счета на отдельном листе"
-    },
-    {
-      "id": "auto-2026-11-10-trim-clean",
-      "date": "2026-11-10",
-      "title": "Лишние пробелы портят поиск"
-    },
-    {
-      "id": "auto-2026-11-11-weighted-average",
-      "date": "2026-11-11",
-      "title": "Средняя цена с учётом количества"
-    },
-    {
-      "id": "auto-2026-11-13-count-empty",
-      "date": "2026-11-13",
-      "title": "Сколько строк ещё не заполнено?"
-    }
-  ],
-  "updated_at": "2026-11-05T21:50:03.621903+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42068484802"
+  "status": "published",
+  "reel_id": "reel11",
+  "permalink": "https://www.instagram.com/reel/DfXgEnBjeuK/",
+  "updated_at": "2026-11-05T21:51:12.814962+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42068589637"
 }
