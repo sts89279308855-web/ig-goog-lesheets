@@ -299,5 +299,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "0274d7142c8708665c3a2c02f385126db4e71bbfcee45b2b7d81ffbc529fa723"
+  },
+  {
+    "id": "auto-2026-11-13-count-empty",
+    "date": "2026-11-13",
+    "status": "ready",
+    "format": "short",
+    "title": "Сколько строк ещё не заполнено?",
+    "source_topic": "count-empty",
+    "topic_hash": "4e683c165a8ae1137502583f62f64d5949f0cf698f30e91bc575868f1ff34149",
+    "video": "reels/auto-2026-11-13-count-empty.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-13-count-empty.mp4",
+    "caption": "Сколько строк ещё не заполнено?\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ B2:B6 разместите Анна, пусто, Игорь, пусто, Олег. Формулу вводим вне B2:B6.\n\n=COUNTBLANK(B2:B6)\n\nВ диапазоне две пустые ячейки — результат 2.\n\nЯчейка с формулой, вернувшей пустую строку, тоже считается пустой. Пробел в ячейке пустотой не считается.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 42.58,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "0b927348308ecff09ccd89ce92b2abba3940b806387b957819ae53b68bcc9fb9"
   }
 ]
