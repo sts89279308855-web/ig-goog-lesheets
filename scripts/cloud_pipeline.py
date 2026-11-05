@@ -14,9 +14,7 @@ def connection():
  key=os.environ.get('COMPOSIO_CONSUMER_KEY','')
  if not key.startswith('ck_'):raise RuntimeError('Add the Composio Connect ck_ key as the GitHub Actions secret COMPOSIO_CONSUMER_KEY. The expired test token is not used.')
  m=MCP(key,consumer=True)
- r=m.request('tools/call',{'name':'COMPOSIO_SEARCH_TOOLS','arguments':{'session':{'generate_id':True},'queries':[{'use_case':'Publish one Instagram Reel, inspect recent media, and add a hashtag comment'}]}})['result']
- body=json.loads(next(c['text'] for c in r['content'] if c.get('type')=='text'))
- m.tool_session=body['data']['session']['id'];profile(m)
+ profile(m)
  return m
 def recent(m):
  data=m.tool('INSTAGRAM_GET_IG_USER_MEDIA',{'ig_user_id':'me','limit':7,'fields':'id,caption,permalink,timestamp'})
@@ -42,19 +40,26 @@ def audit():
  print(json.dumps({'authentication':auth,'ready_queue':ready},ensure_ascii=False))
  if auth!='verified':raise RuntimeError('Persistent cloud publishing is waiting for COMPOSIO_CONSUMER_KEY')
 def publish():
- m=connection();day=now().date().isoformat();media=recent(m)
+ current=now()
+ minute=current.hour*60+current.minute
+ if not (minute>=20*60+40 or minute<6*60):
+  print('Outside the scheduled catch-up window');return
+ m=connection();day=current.date().isoformat();media=recent(m)
  for entry in queue():
   if entry.get('status')!='ready':continue
   match=next((v for v in media if v.get('caption')==entry.get('caption','').replace('\\n','\n')),None)
   if match:finish(entry,match)
  if any(dt.datetime.fromisoformat(v['timestamp'].replace('Z','+00:00')).astimezone(TZ).date().isoformat()==day for v in media):
   status('publisher',status='skipped_already_posted_today',date=day);return
- if not (20*60+40<=now().hour*60+now().minute<=22*60+40):raise RuntimeError('Outside the daily publication window')
  candidates=sorted([e for e in queue() if e.get('status')=='ready' and e['date']<=day],key=lambda e:e['date'])
  if not candidates:raise RuntimeError('No ready video is due today; planned items are not published')
  e=candidates[0];caption=e['caption'].replace('\\n','\n');path='.cloud/publications/'+day+'.json'
  found=next((v for v in media if v.get('caption')==caption),None)
  if found:finish(e,found);return
+ previous=(current.date()-dt.timedelta(days=1)).isoformat()
+ previous_record,_=read_file('.cloud/publications/'+previous+'.json')
+ if previous_record and json.loads(previous_record).get('status') in ('publishing','unknown'):
+  raise RuntimeError('Previous publication attempt requires reconciliation; no blind retry')
  old,_=read_file(path);state=json.loads(old) if old else {}
  if state.get('status') in ('publishing','unknown','published'):raise RuntimeError('Existing publication attempt requires reconciliation; no blind retry')
  if state.get('status')=='created' and state.get('reel_id')==e['id']:cid=state['container_id']

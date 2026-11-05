@@ -29,12 +29,24 @@ class PublicationSafety(unittest.TestCase):
   self.assertEqual(p.save_json.call_args.args[1]['status'],'unknown')
   self.assertEqual(self.client.tool.call_count,2)
  def test_existing_ambiguous_attempt_is_not_sent_again(self):
-  with patch.object(p,'recent',return_value=[]),patch.object(p,'read_file',return_value=(json.dumps({'status':'publishing'}),'sha')):
+  with patch.object(p,'recent',return_value=[]),patch.object(p,'read_file',side_effect=[(None,None),(json.dumps({'status':'publishing'}),'sha')]):
    with self.assertRaisesRegex(RuntimeError,'no blind retry'):p.publish()
   self.client.tool.assert_not_called()
  def test_outside_window_never_posts(self):
   with patch.object(p,'recent',return_value=[]),patch.object(p,'now',return_value=dt.datetime(2026,10,31,12,0,tzinfo=p.TZ)):
-   with self.assertRaisesRegex(RuntimeError,'Outside'):p.publish()
+   p.publish()
+  self.client.tool.assert_not_called()
+ def test_delayed_run_after_midnight_publishes_due_video(self):
+  next_day=dt.datetime(2026,11,1,3,37,tzinfo=p.TZ)
+  self.client.tool.side_effect=[{'id':'container'},{'id':self.media['id']},self.media]
+  with patch.object(p,'recent',return_value=[]),patch.object(p,'now',return_value=next_day):
+   p.publish()
+  self.assertEqual(self.client.tool.call_count,3)
+  p.finish.assert_called_once_with(self.entry,self.media)
+ def test_ambiguous_attempt_before_midnight_blocks_next_day(self):
+  next_day=dt.datetime(2026,11,1,3,37,tzinfo=p.TZ)
+  with patch.object(p,'recent',return_value=[]),patch.object(p,'now',return_value=next_day),patch.object(p,'read_file',return_value=(json.dumps({'status':'unknown'}),'sha')):
+   with self.assertRaisesRegex(RuntimeError,'Previous publication attempt'):p.publish()
   self.client.tool.assert_not_called()
  def test_planned_video_never_posts(self):
   with patch.object(p,'recent',return_value=[]),patch.object(p,'queue',return_value=[dict(self.entry,status='planned')]):

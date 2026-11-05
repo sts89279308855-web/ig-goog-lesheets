@@ -11,7 +11,7 @@ UTC=dt.timezone.utc
 
 class MCP:
  def __init__(self,token,consumer=False):
-  self.token=token;self.consumer=consumer;self.sid=None;self.counter=0;self.tool_session='play'
+  self.token=token;self.consumer=consumer;self.sid=None;self.counter=0
   r=self.request('initialize',{'protocolVersion':'2025-03-26','capabilities':{},'clientInfo':{'name':'instagram-cloud-test','version':'1.0'}})
   self.version=r.get('result',{}).get('protocolVersion','2025-03-26')
  def request(self,method,params):
@@ -33,7 +33,8 @@ class MCP:
   if 'error' in response:raise RuntimeError('MCP request rejected')
   return response
  def tool(self,name,args):
-  r=self.request('tools/call',{'name':'COMPOSIO_MULTI_EXECUTE_TOOL','arguments':{'session_id':self.tool_session,'current_step':'CLOUD_PUBLISH','sync_response_to_workbench':False,'tools':[{'tool_slug':name,'account':ACCOUNT,'arguments':args}]}})['result']
+  arguments={'current_step':'CLOUD_PUBLISH','sync_response_to_workbench':False,'tools':[{'tool_slug':name,'account':ACCOUNT,'arguments':args}]}
+  r=self.request('tools/call',{'name':'COMPOSIO_MULTI_EXECUTE_TOOL','arguments':arguments})['result']
   if r.get('isError'):raise RuntimeError('MCP tool failed: '+name)
   result=json.loads(next(c['text'] for c in r['content'] if c.get('type')=='text'))
   entry=result.get('data',{}).get('results',[{}])[0].get('response',{})
