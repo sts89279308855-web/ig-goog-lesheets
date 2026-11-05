@@ -30,6 +30,33 @@ def block(d,text,y,size=30,width=624,color='#172334',mono=False,x=48):
   if y+size>1100:raise ValueError('Text outside the safe area')
   d.text((x,y),line,font=font(size,mono),fill=color);y+=size*1.3
  return y
+def comic_panel(im, dialogue):
+ d=ImageDraw.Draw(im)
+ d.rounded_rectangle((40,295,680,1015),26,fill='#FBD39E',outline='#192538',width=5)
+ for x in (82,340,598):
+  d.line((x,680,x+24,624),fill='#F6A750',width=8)
+ d.ellipse((510,590,636,716),fill='#FFECC4')
+ for i,(x,shirt,skin,hair) in enumerate(((198,'#AD4A37','#D88963','#722C29'),(522,'#24446C','#F2AE77','#28283A'))):
+  d.rounded_rectangle((x-104,826,x+104,988),40,fill=shirt,outline='#192538',width=5)
+  d.rounded_rectangle((x-25,786,x+25,870),15,fill=skin,outline='#192538',width=5)
+  d.ellipse((x-72,690,x+72,841),fill=skin,outline='#192538',width=5)
+  d.pieslice((x-74,675,x+74,800),170,355,fill=hair,outline='#192538',width=4)
+  for eye in (x-25,x+25):
+   d.ellipse((eye-9,752,eye+9,771),fill='#FFF7E9',outline='#192538',width=2)
+   offset=4 if i==0 else -4
+   d.ellipse((eye+offset-4,756,eye+offset+4,767),fill='#192538')
+  d.arc((x-18,775,x+18,811),10,160,fill='#192538',width=4)
+ for i,text in enumerate(dialogue):
+  x=66 if i==0 else 321
+  y=322 if i==0 else 496
+  fitted=lines(text,32,300)
+  if len(fitted)>3:raise ValueError('Comic dialogue is too long')
+  bottom=y+42*len(fitted)+28
+  tail=x+90 if i==0 else x+193
+  d.polygon([(tail-16,bottom-4),(tail+19,bottom-4),(tail,bottom+38)],fill='#192538')
+  d.rounded_rectangle((x,y,x+332,bottom),20,fill='#FFF8E8',outline='#192538',width=4)
+  block(d,text,y+12,32,width=300,color='#A02735' if i else '#192538',x=x+16)
+
 def frame(scene,index,total,progress=1):
  im=Image.new('RGB',(W,H),'#F2F3F7');d=ImageDraw.Draw(im)
  d.rounded_rectangle((40,90,378,135),18,fill='#E6EEFC')
@@ -57,6 +84,8 @@ def frame(scene,index,total,progress=1):
    if d.textlength(line,font=font(25,True))>600:raise ValueError('Formula line does not fit')
    visible=line[:max(0,budget)];budget-=len(line)
    d.text((55,y+16+ri*40),visible,font=font(25,True),fill='#F2F6FD')
+ if scene.get('dialogue'):
+  comic_panel(im,scene['dialogue'])
  if scene.get('presenter'):
   sheet=Image.open(ROOT/'assets/author-presenter.jpg').convert('RGB')
   pose=sheet.crop((0,0,int(sheet.width*.55),sheet.height))
