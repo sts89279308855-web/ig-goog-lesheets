@@ -128,7 +128,7 @@
   {
     "id": "reel11",
     "date": "2026-11-04",
-    "status": "ready",
+    "status": "published",
     "format": "lesson",
     "title": "ВПР: цена без ошибок",
     "notes": "Подготовить урок до публикации: версия Excel, понятный пример прайса и заказа, поэтапная сборка, проверка найденного и отсутствующего товара. 60–90 с, автор в кадре через согласованные ИИ-вставки по фото; шаблон и формулы для копирования. Сначала сохранить и проверить MP4, только затем менять статус на ready.",
@@ -148,7 +148,10 @@
       "speech_tempo": 1.037,
       "synthetic_media_disclosed": true
     },
-    "sha256": "8eafbe32aa7f9aed7c02c8d4c0489ba699476427ee1b6deca79e75ed0d90d0ab"
+    "sha256": "8eafbe32aa7f9aed7c02c8d4c0489ba699476427ee1b6deca79e75ed0d90d0ab",
+    "media_id": "18111211750910199",
+    "permalink": "https://www.instagram.com/reel/DfXgEnBjeuK/",
+    "published_date": "2026-11-05"
   },
   {
     "id": "auto-2026-11-06-countif-0",
