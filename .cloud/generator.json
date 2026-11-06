@@ -1,10 +1,8 @@
 {
-  "status": "generated",
-  "generated": [
-    "auto-2026-11-14-round-money"
-  ],
+  "status": "up_to_date",
+  "generated": [],
   "stock_days": 8,
-  "remaining_topics": 14,
-  "updated_at": "2026-11-06T14:30:52.120906+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42195439210"
+  "remaining_topics": 21,
+  "updated_at": "2026-11-06T20:43:04.475470+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42245544948"
 }
