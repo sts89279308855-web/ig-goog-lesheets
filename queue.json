@@ -330,5 +330,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "0b927348308ecff09ccd89ce92b2abba3940b806387b957819ae53b68bcc9fb9"
+  },
+  {
+    "id": "auto-2026-11-14-round-money",
+    "date": "2026-11-14",
+    "status": "ready",
+    "format": "short",
+    "title": "Копейки в расчётах: округляем явно",
+    "source_topic": "round-money",
+    "topic_hash": "7d336f779c4eeec248211c77d4ca6ed56cfe732b7a111172293c6dbefb99d2ed",
+    "video": "reels/auto-2026-11-14-round-money.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-14-round-money.mp4",
+    "caption": "Копейки в расчётах: округляем явно\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ B2 введите число 19,99. В C2 — число 0,075, или 7,5%. В D2 разместите формулу.\n\n=ROUND(B2*C2;2)\n\n19,99 × 7,5% = 1,49925; после округления получаем 1,50.\n\nФормат с двумя знаками меняет отображение. ROUND меняет результат вычисления. Правила округления для конкретного расчёта задавайте отдельно.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 54.96,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "46070ff476dc2191d7ec46d217d50efc2b5641511a416898421eebe261a35ad0"
   }
 ]
