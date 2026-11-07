@@ -358,5 +358,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "46070ff476dc2191d7ec46d217d50efc2b5641511a416898421eebe261a35ad0"
+  },
+  {
+    "id": "auto-2026-11-15-countifs-paid",
+    "date": "2026-11-15",
+    "status": "ready",
+    "format": "lesson",
+    "title": "Заказы менеджера: считаем только оплаченные",
+    "source_topic": "countifs-paid",
+    "topic_hash": "44ea0a098b7e7d81c89903c51898762fed6f739ea5fa1cee6132ce7a284cb0ca",
+    "video": "reels/auto-2026-11-15-countifs-paid.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-15-countifs-paid.mp4",
+    "caption": "Заказы менеджера: считаем только оплаченные\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ B1:C5 создайте таблицу с заголовками, как на экране. В E2 запишите Анна.\nПервое условие сравнивает B2:B5 с именем в E2.\nВторое условие оставляет только статус Оплачен из C2:C5. Условия действуют одновременно.\n\n=COUNTIFS(B2:B5;E2;C2:C5;\"Оплачен\")\n\nДля Анны результат 2, для Игоря — 1.\n\nВ обоих диапазонах должно быть одинаковое число строк. Статусы лучше выбирать из выпадающего списка.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая. Визуальные вставки подготовлены с помощью ИИ по моим фотографиям; это анимированные изображения.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 69.33,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "e3fbccb5ec23be2c51fd0866eaa491e20f29cce91cec2b911156002a48df3c61"
   }
 ]
