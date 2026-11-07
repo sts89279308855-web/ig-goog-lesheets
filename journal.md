@@ -35,3 +35,6 @@
 
 - 2026-11-07 — облачная публикация auto-2026-11-06-countif-0: https://www.instagram.com/reel/Dfahxu-AAFn/
   media_id=18120346669788492
+
+- 2026-11-08 — облачная публикация auto-2026-11-07-average-weekday: https://www.instagram.com/reel/Dfc8pTPnD4G/
+  media_id=18221235694346517
