@@ -1,8 +1,9 @@
 {
-  "status": "up_to_date",
-  "generated": [],
+  "status": "running",
+  "generated": [
+    "auto-2026-11-15-countifs-paid"
+  ],
   "stock_days": 8,
-  "remaining_topics": 21,
-  "updated_at": "2026-11-06T20:43:04.475470+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42245544948"
+  "updated_at": "2026-11-07T13:55:45.051899+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42357451009"
 }
