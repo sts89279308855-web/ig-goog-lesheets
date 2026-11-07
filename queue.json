@@ -187,7 +187,7 @@
   {
     "id": "auto-2026-11-07-average-weekday",
     "date": "2026-11-07",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Средний чек за понедельник",
     "source_topic": "average-weekday",
@@ -207,7 +207,10 @@
       "speech_tempo": 1.0,
       "synthetic_media_disclosed": true
     },
-    "sha256": "da3313d682a49668639685d4a3182b387af383ea5ac7bce072c7d39f93a3f8ea"
+    "sha256": "da3313d682a49668639685d4a3182b387af383ea5ac7bce072c7d39f93a3f8ea",
+    "media_id": "18221235694346517",
+    "permalink": "https://www.instagram.com/reel/Dfc8pTPnD4G/",
+    "published_date": "2026-11-08"
   },
   {
     "id": "auto-2026-11-08-sumifs-0",
