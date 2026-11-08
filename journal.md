@@ -38,3 +38,6 @@
 
 - 2026-11-08 — облачная публикация auto-2026-11-07-average-weekday: https://www.instagram.com/reel/Dfc8pTPnD4G/
   media_id=18221235694346517
+
+- 2026-11-09 — облачная публикация auto-2026-11-08-sumifs-0: https://www.instagram.com/reel/DffjqamDP_p/
+  media_id=18133061884706173
