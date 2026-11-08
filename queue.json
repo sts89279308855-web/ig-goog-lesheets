@@ -215,7 +215,7 @@
   {
     "id": "auto-2026-11-08-sumifs-0",
     "date": "2026-11-08",
-    "status": "ready",
+    "status": "published",
     "format": "lesson",
     "title": "Отчёт кофейни: менеджер и период",
     "source_topic": "sumifs-0",
@@ -235,7 +235,10 @@
       "speech_tempo": 1.0,
       "synthetic_media_disclosed": true
     },
-    "sha256": "9e64e16447c8a069b2e27041e68871fcb114d22339a7afa925592b47f0cd17ad"
+    "sha256": "9e64e16447c8a069b2e27041e68871fcb114d22339a7afa925592b47f0cd17ad",
+    "media_id": "18133061884706173",
+    "permalink": "https://www.instagram.com/reel/DffjqamDP_p/",
+    "published_date": "2026-11-09"
   },
   {
     "id": "auto-2026-11-09-filter-overdue",
