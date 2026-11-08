@@ -386,5 +386,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "e3fbccb5ec23be2c51fd0866eaa491e20f29cce91cec2b911156002a48df3c61"
+  },
+  {
+    "id": "auto-2026-11-16-unique-clients",
+    "date": "2026-11-16",
+    "status": "ready",
+    "format": "short",
+    "title": "Список клиентов без повторов",
+    "source_topic": "unique-clients",
+    "topic_hash": "35fe58b5594cbca3d878cb89b137ea8ea62f4cbc378252aadece677f5266ea29",
+    "video": "reels/auto-2026-11-16-unique-clients.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-16-unique-clients.mp4",
+    "caption": "Список клиентов без повторов\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ B2:B6 запишите Анна, Игорь, Анна, пусто, Олег. Формулу вводим в E2.\n\n=UNIQUE(FILTER(B2:B6;B2:B6<>\"\"))\n\nПолучаем три строки: Анна, Игорь, Олег — в порядке первого появления.\n\nОставьте E2:E6 свободными. Если все исходные ячейки пусты, FILTER вернёт ошибку отсутствия результатов. Для учёта людей используйте ID: одинаковые имена не всегда означают одного человека.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 49.33,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "51ecd1423d69037dbb51ee04c8fa617378dab1e21d75169434823d7a88c830ba"
   }
 ]
