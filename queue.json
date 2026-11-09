@@ -414,5 +414,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "51ecd1423d69037dbb51ee04c8fa617378dab1e21d75169434823d7a88c830ba"
+  },
+  {
+    "id": "auto-2026-11-17-sort-filter",
+    "date": "2026-11-17",
+    "status": "ready",
+    "format": "short",
+    "title": "Только долги — сразу от большего к меньшему",
+    "source_topic": "sort-filter",
+    "topic_hash": "5cc5535b6592fb5079671aef71aa6d5286469e0bb6cc757997b9edce6feab403",
+    "video": "reels/auto-2026-11-17-sort-filter.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-17-sort-filter.mp4",
+    "caption": "Только долги — сразу от большего к меньшему\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ A1:B5 создайте таблицу как в примере. В E2 разместите формулу.\n\n=SORT(FILTER(A2:B5;B2:B5>0);2;FALSE)\n\nРезультат: Сироп — 2000, Кофе — 1200, Какао — 800. FALSE задаёт убывание.\n\nОставьте область E2:F5 свободной. Если положительных долгов нет, FILTER вернёт ошибку отсутствия совпадений; это отдельный случай для обработки.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 47.75,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "9fabd5d9c91addbb1100f8f3104551434638b219ddf51c06cb17dee27f0ef346"
   }
 ]
