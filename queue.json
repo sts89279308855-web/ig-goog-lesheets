@@ -243,7 +243,7 @@
   {
     "id": "auto-2026-11-09-filter-overdue",
     "date": "2026-11-09",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Просроченные счета на отдельном листе",
     "source_topic": "filter-overdue",
@@ -263,7 +263,10 @@
       "speech_tempo": 1.0,
       "synthetic_media_disclosed": true
     },
-    "sha256": "c1b5e30ecdbf827199a336f428ecfa85c55798f98bcd1f3026e774e770b7edfa"
+    "sha256": "c1b5e30ecdbf827199a336f428ecfa85c55798f98bcd1f3026e774e770b7edfa",
+    "media_id": "17934998640420101",
+    "permalink": "https://www.instagram.com/reel/DfijYPhTcdT/",
+    "published_date": "2026-11-10"
   },
   {
     "id": "auto-2026-11-10-trim-clean",
