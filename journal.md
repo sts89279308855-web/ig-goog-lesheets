@@ -41,3 +41,6 @@
 
 - 2026-11-09 — облачная публикация auto-2026-11-08-sumifs-0: https://www.instagram.com/reel/DffjqamDP_p/
   media_id=18133061884706173
+
+- 2026-11-10 — облачная публикация auto-2026-11-09-filter-overdue: https://www.instagram.com/reel/DfijYPhTcdT/
+  media_id=17934998640420101
