@@ -271,7 +271,7 @@
   {
     "id": "auto-2026-11-10-trim-clean",
     "date": "2026-11-10",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Лишние пробелы портят поиск",
     "source_topic": "trim-clean",
@@ -291,7 +291,10 @@
       "speech_tempo": 1.0,
       "synthetic_media_disclosed": true
     },
-    "sha256": "44d7cd1598bf74493fe518668d5a8173fd2537fee1ba27bdc5683b272b97fff8"
+    "sha256": "44d7cd1598bf74493fe518668d5a8173fd2537fee1ba27bdc5683b272b97fff8",
+    "media_id": "18135377497743043",
+    "permalink": "https://www.instagram.com/reel/Dfk3ZUgBIOF/",
+    "published_date": "2026-11-11"
   },
   {
     "id": "auto-2026-11-11-weighted-average",
