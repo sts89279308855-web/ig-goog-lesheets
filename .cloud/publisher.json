@@ -1,7 +1,6 @@
 {
-  "status": "published",
-  "reel_id": "auto-2026-11-10-trim-clean",
-  "permalink": "https://www.instagram.com/reel/Dfk3ZUgBIOF/",
-  "updated_at": "2026-11-11T02:25:10.758331+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42904734363"
+  "status": "skipped_already_posted_today",
+  "date": "2026-11-11",
+  "updated_at": "2026-11-11T02:49:46.978825+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42908780200"
 }
