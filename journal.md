@@ -44,3 +44,6 @@
 
 - 2026-11-10 — облачная публикация auto-2026-11-09-filter-overdue: https://www.instagram.com/reel/DfijYPhTcdT/
   media_id=17934998640420101
+
+- 2026-11-11 — облачная публикация auto-2026-11-10-trim-clean: https://www.instagram.com/reel/Dfk3ZUgBIOF/
+  media_id=18135377497743043
