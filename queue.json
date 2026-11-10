@@ -442,5 +442,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "9fabd5d9c91addbb1100f8f3104551434638b219ddf51c06cb17dee27f0ef346"
+  },
+  {
+    "id": "auto-2026-11-18-query-summary",
+    "date": "2026-11-18",
+    "status": "ready",
+    "format": "lesson",
+    "title": "QUERY: сводим продажи по менеджерам",
+    "source_topic": "query-summary",
+    "topic_hash": "fdd33dc0c23f632ee58a1294afa2c65a85b63123e94bf458ea1adb9d55d7518a",
+    "video": "reels/auto-2026-11-18-query-summary.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-18-query-summary.mp4",
+    "caption": "QUERY: сводим продажи по менеджерам\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ A1:C4 разместите заголовки и три строки: заказ, имя, сумма. Формулу введите в E1.\nselect B,sum(C) выбирает менеджера и сумму продаж.\ngroup by B группирует строки по менеджеру. Последняя единица сообщает, что в диапазоне одна строка заголовков.\n\n=QUERY(A1:C4;\"select B,sum(C) group by B\";1)\n\nВ сводке Анна — 1800, Игорь — 800. Добавляете строку — расширьте диапазон A1:C4.\n\nСуммы должны быть числами. Если в одном столбце смешать числа и текст, QUERY может считать часть значений пустыми. Оставьте область результата свободной.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая. Визуальные вставки подготовлены с помощью ИИ по моим фотографиям; это анимированные изображения.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 79.71,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "ca43e686bea1a3c785fcaff59e09db0acd2c76bbdb5a69059b0d4ee04ac4b1df"
   }
 ]
