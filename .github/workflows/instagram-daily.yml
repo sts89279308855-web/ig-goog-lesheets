@@ -1,6 +1,11 @@
 name: Instagram daily publishing
 on:
   schedule:
+    # Early triggers absorb scheduler delays. The publisher enforces local hours.
+    - cron: '47 7 * * *'
+    - cron: '13 9 * * *'
+    - cron: '23 11 * * *'
+    - cron: '17 13 * * *'
     - cron: '40,59 15 * * *'
     - cron: '19,39,59 16 * * *'
     - cron: '19,39 17 * * *'
