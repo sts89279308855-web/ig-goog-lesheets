@@ -1,9 +1,10 @@
 {
-  "status": "running",
+  "status": "generated",
   "generated": [
     "auto-2026-11-19-payment-due-status"
   ],
   "stock_days": 8,
-  "updated_at": "2026-11-11T14:34:51.696349+05:00",
+  "remaining_topics": 21,
+  "updated_at": "2026-11-11T14:34:53.529073+05:00",
   "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/42996192383"
 }
