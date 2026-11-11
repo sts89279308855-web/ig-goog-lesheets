@@ -299,7 +299,7 @@
   {
     "id": "auto-2026-11-11-weighted-average",
     "date": "2026-11-11",
-    "status": "ready",
+    "status": "published",
     "format": "lesson",
     "title": "Средняя цена с учётом количества",
     "source_topic": "weighted-average",
@@ -319,7 +319,10 @@
       "speech_tempo": 1.0,
       "synthetic_media_disclosed": true
     },
-    "sha256": "0274d7142c8708665c3a2c02f385126db4e71bbfcee45b2b7d81ffbc529fa723"
+    "sha256": "0274d7142c8708665c3a2c02f385126db4e71bbfcee45b2b7d81ffbc529fa723",
+    "media_id": "18134170012881090",
+    "permalink": "https://www.instagram.com/reel/DfnT31Uhfc5/",
+    "published_date": "2026-11-12"
   },
   {
     "id": "auto-2026-11-13-count-empty",
