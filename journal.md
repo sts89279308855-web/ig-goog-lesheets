@@ -47,3 +47,6 @@
 
 - 2026-11-11 — облачная публикация auto-2026-11-10-trim-clean: https://www.instagram.com/reel/Dfk3ZUgBIOF/
   media_id=18135377497743043
+
+- 2026-11-12 — облачная публикация auto-2026-11-11-weighted-average: https://www.instagram.com/reel/DfnT31Uhfc5/
+  media_id=18134170012881090
