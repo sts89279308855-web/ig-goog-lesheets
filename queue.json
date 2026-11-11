@@ -470,5 +470,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "ca43e686bea1a3c785fcaff59e09db0acd2c76bbdb5a69059b0d4ee04ac4b1df"
+  },
+  {
+    "id": "auto-2026-11-19-payment-due-status",
+    "date": "2026-11-19",
+    "status": "ready",
+    "format": "short",
+    "title": "Оплата сегодня. Уже просрочка?",
+    "source_topic": "payment-due-status",
+    "topic_hash": "793d761dd649fd620ff5fb9608214c0a8815b478dc44fb27d87054d103d04245",
+    "video": "reels/auto-2026-11-19-payment-due-status.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-19-payment-due-status.mp4",
+    "caption": "Оплата сегодня. Уже просрочка?\n\nGoogle Таблицы, русская локаль, английские имена функций.\n\nB2 — дата оплаты. C2 — остаток. Формула в D2.\n\n=IF(B2=\"\";\"Нет срока\";IF(AND(B2<TODAY();C2>0);\"Просрочено\";\"ОК\"))\n\nСравниваем с сегодняшней датой. Просрочка только после срока и при долге больше нуля.\n\nВчера и 8 000 ₽ → Просрочено. Пустая дата → Нет срока.\n\nПерешлите коллеге, который ведёт оплаты.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 29.04,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "520e65b4709bb2bd77a5c899de8e408950129cee8af85a5a3056f230f95dec47"
   }
 ]
