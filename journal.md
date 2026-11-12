@@ -50,3 +50,6 @@
 
 - 2026-11-12 — облачная публикация auto-2026-11-11-weighted-average: https://www.instagram.com/reel/DfnT31Uhfc5/
   media_id=18134170012881090
+
+- 2026-11-13 — облачная публикация reel07: https://www.instagram.com/reel/Dfp82RjJzye/
+  media_id=18336488347263502
