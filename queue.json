@@ -498,5 +498,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "520e65b4709bb2bd77a5c899de8e408950129cee8af85a5a3056f230f95dec47"
+  },
+  {
+    "id": "auto-2026-11-20-date-text-check",
+    "date": "2026-11-20",
+    "status": "ready",
+    "format": "short",
+    "title": "Какая из двух дат настоящая?",
+    "source_topic": "date-text-check",
+    "topic_hash": "d8873be85b219aa89ee258ba69952c2897adb89449420c4dc1ff39a02ab6af13",
+    "video": "reels/auto-2026-11-20-date-text-check.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-20-date-text-check.mp4",
+    "caption": "Какая из двух дат настоящая?\n\nGoogle Таблицы, русская локаль, английские имена функций.\n\nA2 — дата 09.11.2026. A3 — та же запись с апострофом в начале.\n\n=ISNUMBER(A2)\n\nВ B2 вставьте формулу и протяните на B3.\n\nB2 покажет TRUE, B3 — FALSE. Обычное число тоже даст TRUE.\n\nСохраните проверку для следующей выгрузки.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 27.67,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "3b51c520bd4139f57853dcd6cf1fe697f02febc61818b2bf0daa8b68ba895c02"
   }
 ]
