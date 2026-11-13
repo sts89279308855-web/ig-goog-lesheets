@@ -1,9 +1,10 @@
 {
-  "status": "running",
+  "status": "generated",
   "generated": [
     "auto-2026-11-21-sku-leading-zero"
   ],
   "stock_days": 8,
-  "updated_at": "2026-11-13T14:42:34.995275+05:00",
+  "remaining_topics": 19,
+  "updated_at": "2026-11-13T14:42:36.206912+05:00",
   "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/43403413766"
 }
