@@ -39,6 +39,39 @@ def audit():
  status('publisher',status='ready' if auth=='verified' else 'needs_auth',authentication=auth,time_zone='Asia/Yekaterinburg',daily_time='20:40',ready_queue=ready)
  print(json.dumps({'authentication':auth,'ready_queue':ready},ensure_ascii=False))
  if auth!='verified':raise RuntimeError('Persistent cloud publishing is waiting for COMPOSIO_CONSUMER_KEY')
+
+def wait_for_carousel_item(client, container_id):
+ for attempt in range(30):
+  result=client.tool('INSTAGRAM_GET_POST_STATUS', {'creation_id':container_id})
+  state=result.get('status_code')
+  if state=='FINISHED':
+   return
+  if state in ('ERROR','EXPIRED'):
+   raise RuntimeError('Carousel item is not usable: '+state)
+  time.sleep(3)
+ raise RuntimeError('Carousel item processing timed out')
+
+def create_carousel_container(client, entry, caption, path, state):
+ images=entry.get('image_urls',[])
+ if not 2<=len(images)<=10 or not all(isinstance(url,str) and url.startswith('https://') for url in images):
+  raise ValueError('Carousel requires 2–10 ordered HTTPS image URLs')
+ if state.get('reel_id')!=entry['id'] or state.get('image_urls')!=images:
+  state={}
+ children=list(state.get('child_ids',[]))
+ if len(children)>len(images):
+  raise ValueError('Saved carousel children exceed image count')
+ for image_url in images[len(children):]:
+  child=client.tool('INSTAGRAM_POST_IG_USER_MEDIA', {
+   'ig_user_id':IG_USER,'image_url':image_url,'is_carousel_item':True})
+  children.append(child['id'])
+  save_json(path,dict(status='preparing',reel_id=entry['id'],
+   image_urls=images,child_ids=children),'Record carousel image containers')
+ for child_id in children:
+  wait_for_carousel_item(client,child_id)
+ parent=client.tool('INSTAGRAM_POST_IG_USER_MEDIA', {
+  'ig_user_id':IG_USER,'media_type':'CAROUSEL','children':children,'caption':caption})
+ return parent['id']
+
 def publish():
  current=now()
  minute=current.hour*60+current.minute
@@ -64,8 +97,12 @@ def publish():
  if state.get('status') in ('publishing','unknown','published'):raise RuntimeError('Existing publication attempt requires reconciliation; no blind retry')
  if state.get('status')=='created' and state.get('reel_id')==e['id']:cid=state['container_id']
  else:
-  r=m.tool('INSTAGRAM_POST_IG_USER_MEDIA',{'ig_user_id':IG_USER,'media_type':'REELS','video_url':e['video_raw_url'],'caption':caption,'thumb_offset':e.get('thumb_offset',3000),'share_to_feed':True})
-  cid=r['id'];save_json(path,dict(status='created',reel_id=e['id'],container_id=cid),'Record prepared media container')
+  if e.get('format')=='carousel':
+   cid=create_carousel_container(m,e,caption,path,state)
+  else:
+   r=m.tool('INSTAGRAM_POST_IG_USER_MEDIA',{'ig_user_id':IG_USER,'media_type':'REELS','video_url':e['video_raw_url'],'caption':caption,'thumb_offset':e.get('thumb_offset',3000),'share_to_feed':True})
+   cid=r['id']
+  save_json(path,dict(status='created',reel_id=e['id'],container_id=cid),'Record prepared media container')
  save_json(path,dict(status='publishing',reel_id=e['id'],container_id=cid),'Record single publish attempt')
  try:r=m.tool('INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH',{'ig_user_id':IG_USER,'creation_id':cid,'max_wait_seconds':150})
  except Exception:
@@ -75,8 +112,9 @@ def publish():
   raise RuntimeError('Uncertain publication result. Verify Instagram before retrying.') from None
  media=m.tool('INSTAGRAM_GET_IG_MEDIA',{'ig_media_id':r['id'],'fields':'id,permalink,timestamp,caption'})
  finish(e,media)
- if e.get('hashtags'):
-  try:m.tool('INSTAGRAM_POST_IG_MEDIA_COMMENTS',{'ig_media_id':media['id'],'message':e['hashtags']})
+ comment=e.get('first_comment',e.get('hashtags',''))
+ if comment:
+  try:m.tool('INSTAGRAM_POST_IG_MEDIA_COMMENTS',{'ig_media_id':media['id'],'message':comment})
   except Exception:status('publisher',status='published_comment_unconfirmed',permalink=media['permalink'])
  print('Published',media['permalink'])
 def next_slot(q,today,horizon=8):
