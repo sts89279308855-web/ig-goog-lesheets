@@ -330,7 +330,7 @@
   {
     "id": "auto-2026-11-13-count-empty",
     "date": "2026-11-13",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Сколько строк ещё не заполнено?",
     "source_topic": "count-empty",
@@ -350,7 +350,10 @@
       "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
-    "sha256": "0b927348308ecff09ccd89ce92b2abba3940b806387b957819ae53b68bcc9fb9"
+    "sha256": "0b927348308ecff09ccd89ce92b2abba3940b806387b957819ae53b68bcc9fb9",
+    "media_id": "18118486367593400",
+    "permalink": "https://www.instagram.com/reel/DfsfZQlvfms/",
+    "published_date": "2026-11-14"
   },
   {
     "id": "auto-2026-11-14-round-money",
