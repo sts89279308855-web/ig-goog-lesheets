@@ -526,5 +526,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "3b51c520bd4139f57853dcd6cf1fe697f02febc61818b2bf0daa8b68ba895c02"
+  },
+  {
+    "id": "auto-2026-11-21-sku-leading-zero",
+    "date": "2026-11-21",
+    "status": "ready",
+    "format": "short",
+    "title": "Куда делись нули в артикуле?",
+    "source_topic": "sku-leading-zero",
+    "topic_hash": "e56c0987925d0d757180168c6306e0573de251b9fd1d16da995a6e726e4eaf3d",
+    "video": "reels/auto-2026-11-21-sku-leading-zero.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-21-sku-leading-zero.mp4",
+    "caption": "Куда делись нули в артикуле?\n\nGoogle Таблицы, русская локаль, английские имена функций.\n\nВ A2 число 42. Код должен содержать пять цифр.\n\n=TEXT(A2;\"00000\")\n\nВставьте формулу в B2. Получится текст 00042.\n\nЕсли A2 = 123456, результат останется 123456. Формат не обрезает цифры.\n\nПерешлите коллеге, который загружает прайсы.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 31.62,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "6027a3ab1f390e662943590498697b616fa0d62db4be34091bad1bef993cc7f6"
   }
 ]
