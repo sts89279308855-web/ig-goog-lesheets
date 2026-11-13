@@ -1,7 +1,6 @@
 {
-  "status": "published",
-  "reel_id": "auto-2026-11-13-count-empty",
-  "permalink": "https://www.instagram.com/reel/DfsfZQlvfms/",
-  "updated_at": "2026-11-14T01:29:24.940780+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/43501901172"
+  "status": "skipped_already_posted_today",
+  "date": "2026-11-14",
+  "updated_at": "2026-11-14T02:35:57.056013+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/43512097201"
 }
