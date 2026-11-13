@@ -178,7 +178,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "a420ee562bc04ce9fa8df87e5d60a23b389d3d0d2a2cc3432a33f69c28ae07bf",
@@ -207,7 +207,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "da3313d682a49668639685d4a3182b387af383ea5ac7bce072c7d39f93a3f8ea",
@@ -235,7 +235,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "9e64e16447c8a069b2e27041e68871fcb114d22339a7afa925592b47f0cd17ad",
@@ -263,7 +263,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "c1b5e30ecdbf827199a336f428ecfa85c55798f98bcd1f3026e774e770b7edfa",
@@ -291,7 +291,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "44d7cd1598bf74493fe518668d5a8173fd2537fee1ba27bdc5683b272b97fff8",
@@ -319,7 +319,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "0274d7142c8708665c3a2c02f385126db4e71bbfcee45b2b7d81ffbc529fa723",
@@ -347,7 +347,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "0b927348308ecff09ccd89ce92b2abba3940b806387b957819ae53b68bcc9fb9"
@@ -372,7 +372,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "46070ff476dc2191d7ec46d217d50efc2b5641511a416898421eebe261a35ad0"
@@ -397,7 +397,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "e3fbccb5ec23be2c51fd0866eaa491e20f29cce91cec2b911156002a48df3c61"
@@ -422,7 +422,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "51ecd1423d69037dbb51ee04c8fa617378dab1e21d75169434823d7a88c830ba"
@@ -447,7 +447,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "9fabd5d9c91addbb1100f8f3104551434638b219ddf51c06cb17dee27f0ef346"
@@ -472,7 +472,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "ca43e686bea1a3c785fcaff59e09db0acd2c76bbdb5a69059b0d4ee04ac4b1df"
@@ -497,7 +497,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "520e65b4709bb2bd77a5c899de8e408950129cee8af85a5a3056f230f95dec47"
@@ -522,7 +522,7 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "3b51c520bd4139f57853dcd6cf1fe697f02febc61818b2bf0daa8b68ba895c02"
@@ -547,9 +547,68 @@
       "audio": "aac",
       "layout_checks": "passed",
       "voice": "ru-RU-SvetlanaNeural",
-      "speech_tempo": 1.0,
+      "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
     "sha256": "6027a3ab1f390e662943590498697b616fa0d62db4be34091bad1bef993cc7f6"
+  },
+  {
+    "id": "rita-ig01-weekly-report",
+    "date": "2026-11-23",
+    "status": "ready",
+    "format": "carousel",
+    "title": "Опять собирать отчёт вручную?",
+    "image_urls": [
+      "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/5b3e1b63f9da84e48b6b59901b7962048821b812/posts/rita-ig01/01.jpg",
+      "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/5b3e1b63f9da84e48b6b59901b7962048821b812/posts/rita-ig01/02.jpg",
+      "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/5b3e1b63f9da84e48b6b59901b7962048821b812/posts/rita-ig01/03.jpg",
+      "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/5b3e1b63f9da84e48b6b59901b7962048821b812/posts/rita-ig01/04.jpg",
+      "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/5b3e1b63f9da84e48b6b59901b7962048821b812/posts/rita-ig01/05.jpg",
+      "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/5b3e1b63f9da84e48b6b59901b7962048821b812/posts/rita-ig01/06.jpg",
+      "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/5b3e1b63f9da84e48b6b59901b7962048821b812/posts/rita-ig01/07.jpg"
+    ],
+    "caption": "Каждую неделю собираете один и тот же отчёт вручную?\n\nВыгрузить продажи, скопировать строки, поправить даты, объединить данные, посчитать выручку — знакомая последовательность для малого бизнеса.\n\nПоказываю учебный пример: две недельные выгрузки и один отчёт в Excel для Windows. Выручка в примере — 57 000 ₽ за первую неделю и 68 000 ₽ за вторую. Это учебные данные, а не результаты клиента.\n\nС помощью Power Query можно один раз настроить получение файлов из папки, преобразование данных и загрузку итоговой таблицы. Затем добавлять новые выгрузки и запускать «Обновить всё».\n\nТакая автоматизация работает после первоначальной настройки. В этом примере обновление запускается командой, не в реальном времени. Столбцы и формат файлов должны соответствовать настройке; ошибки, пропуски и дубли нужно проверять. Если структура выгрузки меняется, запросу может понадобиться доработка.\n\nЯ помогаю разбирать такие задачи и настраивать отчёты. Напишите «ОТЧЁТ» в Direct: на бесплатной консультации обсудим ваши источники данных и повторяющиеся действия. Все консультации бесплатные.\n\nРита — мой вымышленный персонаж-помощник. Её изображения созданы с помощью ИИ. Таблицы и суммы в этом выпуске используются для обучения.",
+    "hashtags": "#Excel #PowerQuery #АвтоматизацияОтчетов #МалыйБизнес",
+    "assets_commit": "5b3e1b63f9da84e48b6b59901b7962048821b812",
+    "validation": {
+      "image_count": 7,
+      "width": 1080,
+      "height": 1350,
+      "format": "JPEG",
+      "source_blobs_verified": true,
+      "checksums": [
+        {
+          "file": "01.jpg",
+          "sha256": "7ca9485c6ac694ab7b1213a545c95e9f7b7b7e9c590e8d0dad177732b24bebd0"
+        },
+        {
+          "file": "02.jpg",
+          "sha256": "4183ccba4aeeceb5e97fc86a5265d14e1ec04ac5a5665347fce39b8234b90d28"
+        },
+        {
+          "file": "03.jpg",
+          "sha256": "f9dc21782a647779bfb823406e1ee3630718d29c11c5cc9523c3c89ca3f9ca7e"
+        },
+        {
+          "file": "04.jpg",
+          "sha256": "b9998adba15df327877e5d45ae8d9e73aca2af4d928ca56b8b6b51a7256ee220"
+        },
+        {
+          "file": "05.jpg",
+          "sha256": "06b1947ca562f5cfb04263b7fc9a6d1dfa54548ca13e6bfb2edc24c4e353dab1"
+        },
+        {
+          "file": "06.jpg",
+          "sha256": "41e2409ff10f7ced9f805ec320ded119880f21025ccddfd7bcca03fa31aae59e"
+        },
+        {
+          "file": "07.jpg",
+          "sha256": "f21b4bcaaca3fad8932d9f60a6bbfb28b84d3dab77f4359e1d9e83d6ea157d55"
+        }
+      ],
+      "caption_characters": 1215,
+      "synthetic_media_disclosed": true,
+      "synthetic_example_data": true
+    }
   }
 ]
