@@ -358,7 +358,7 @@
   {
     "id": "auto-2026-11-14-round-money",
     "date": "2026-11-14",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Копейки в расчётах: округляем явно",
     "source_topic": "round-money",
@@ -378,7 +378,10 @@
       "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
-    "sha256": "46070ff476dc2191d7ec46d217d50efc2b5641511a416898421eebe261a35ad0"
+    "sha256": "46070ff476dc2191d7ec46d217d50efc2b5641511a416898421eebe261a35ad0",
+    "media_id": "17972186951963674",
+    "permalink": "https://www.instagram.com/reel/DfvBVKMgUsm/",
+    "published_date": "2026-11-15"
   },
   {
     "id": "auto-2026-11-15-countifs-paid",
