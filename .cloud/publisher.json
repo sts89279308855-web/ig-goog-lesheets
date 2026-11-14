@@ -1,7 +1,6 @@
 {
-  "status": "published",
-  "reel_id": "auto-2026-11-14-round-money",
-  "permalink": "https://www.instagram.com/reel/DfvBVKMgUsm/",
-  "updated_at": "2026-11-15T01:04:26.437243+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/43635435738"
+  "status": "skipped_already_posted_today",
+  "date": "2026-11-15",
+  "updated_at": "2026-11-15T01:46:11.039729+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/43639229859"
 }
