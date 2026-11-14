@@ -64,3 +64,6 @@
 
 - 2026-11-14 — облачная публикация auto-2026-11-13-count-empty: https://www.instagram.com/reel/DfsfZQlvfms/
   media_id=18118486367593400
+
+- 2026-11-15 — облачная публикация auto-2026-11-14-round-money: https://www.instagram.com/reel/DfvBVKMgUsm/
+  media_id=17972186951963674
