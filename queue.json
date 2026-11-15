@@ -386,7 +386,7 @@
   {
     "id": "auto-2026-11-15-countifs-paid",
     "date": "2026-11-15",
-    "status": "ready",
+    "status": "published",
     "format": "lesson",
     "title": "Заказы менеджера: считаем только оплаченные",
     "source_topic": "countifs-paid",
@@ -406,7 +406,10 @@
       "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
-    "sha256": "e3fbccb5ec23be2c51fd0866eaa491e20f29cce91cec2b911156002a48df3c61"
+    "sha256": "e3fbccb5ec23be2c51fd0866eaa491e20f29cce91cec2b911156002a48df3c61",
+    "media_id": "18351990133284954",
+    "permalink": "https://www.instagram.com/reel/DfxhYvFoa_8/",
+    "published_date": "2026-11-16"
   },
   {
     "id": "auto-2026-11-16-unique-clients",
