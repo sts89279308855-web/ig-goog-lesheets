@@ -92,3 +92,6 @@
 - Reels AE01_pilot.mp4: https://www.instagram.com/reel/DfziBDGgzTr/ ; media_id=18118301126611442, 19:06:51 Asia/Yekaterinburg. GET_IG_MEDIA подтвердил REELS и подпись с раскрытием синтеза речи.
 - SHA-256 MP4 d6935e8b56d6a3ed3b5457ce2d3e01d270c5b87daf7005c25bcf0e97b350944b, JPEG сверены после передачи. check_release.cjs пройден. Пользователь одобрил ролик; слуховая проверка агентом не заявляется.
 - Первые комментарии с хештегами: 18091997684276693, 17976738461948155. Очередь, другие записи, постоянное расписание и конвейер не менялись. Подробный локальный PUBLICATION_STATUS.md сохранён в readability_v3. Не отправлять AE01 повторно.
+
+- 2026-11-17 — облачная публикация auto-2026-11-16-unique-clients: https://www.instagram.com/reel/Df0H0fkiei9/
+  media_id=18117251981166969
