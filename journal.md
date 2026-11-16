@@ -84,3 +84,11 @@
 
 - 2026-11-16 — облачная публикация auto-2026-11-15-countifs-paid: https://www.instagram.com/reel/DfxhYvFoa_8/
   media_id=18351990133284954
+
+
+## 2026-11-16 — AE01 Аделины и Елены, readability_v3
+- По прямому поручению «Публикуй и рилс и карусели» последовательно опубликованы два формата вне очереди.
+- Карусель, 6 JPEG: https://www.instagram.com/p/DfzhxHloXFZ/ ; media_id=18110844425245333, 19:04:33 Asia/Yekaterinburg. GET_IG_MEDIA подтвердил шесть дочерних IMAGE и подпись.
+- Reels AE01_pilot.mp4: https://www.instagram.com/reel/DfziBDGgzTr/ ; media_id=18118301126611442, 19:06:51 Asia/Yekaterinburg. GET_IG_MEDIA подтвердил REELS и подпись с раскрытием синтеза речи.
+- SHA-256 MP4 d6935e8b56d6a3ed3b5457ce2d3e01d270c5b87daf7005c25bcf0e97b350944b, JPEG сверены после передачи. check_release.cjs пройден. Пользователь одобрил ролик; слуховая проверка агентом не заявляется.
+- Первые комментарии с хештегами: 18091997684276693, 17976738461948155. Очередь, другие записи, постоянное расписание и конвейер не менялись. Подробный локальный PUBLICATION_STATUS.md сохранён в readability_v3. Не отправлять AE01 повторно.
