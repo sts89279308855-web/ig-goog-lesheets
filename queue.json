@@ -414,7 +414,7 @@
   {
     "id": "auto-2026-11-16-unique-clients",
     "date": "2026-11-16",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Список клиентов без повторов",
     "source_topic": "unique-clients",
@@ -434,7 +434,10 @@
       "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
-    "sha256": "51ecd1423d69037dbb51ee04c8fa617378dab1e21d75169434823d7a88c830ba"
+    "sha256": "51ecd1423d69037dbb51ee04c8fa617378dab1e21d75169434823d7a88c830ba",
+    "media_id": "18117251981166969",
+    "permalink": "https://www.instagram.com/reel/Df0H0fkiei9/",
+    "published_date": "2026-11-17"
   },
   {
     "id": "auto-2026-11-17-sort-filter",
