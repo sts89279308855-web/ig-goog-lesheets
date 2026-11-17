@@ -647,5 +647,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "19898683a15318deea13c14a0e08b1eef5709e6a6a475520e4a7749b36f07389"
+  },
+  {
+    "id": "auto-2026-11-24-reorder-threshold",
+    "date": "2026-11-24",
+    "status": "ready",
+    "format": "short",
+    "title": "Таблица подскажет, что пора заказать",
+    "source_topic": "reorder-threshold",
+    "topic_hash": "61e9eb3d37a5c504eea09412679022dac3752cda9b9f68c5b7e790816bb1577d",
+    "video": "reels/auto-2026-11-24-reorder-threshold.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-24-reorder-threshold.mp4",
+    "caption": "Таблица подскажет, что пора заказать\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ B2 введите текущий остаток 8. В C2 — минимальный остаток 10. Формулу вводим в D2.\n\n=IF(B2<=C2;\"Заказать\";\"ОК\")\n\nОстаток 8 меньше минимума 10 — получаем Заказать. Меняем B2 на 12 — получаем ОК.\n\nТакой порог не учитывает срок поставки и скорость продаж. Настройте минимум под свой товар; пустые данные сначала нужно проверить.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 47.25,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "3a82f9722dd284f66ea6b31d2aaf5d0579aec38dd60d1044347e2ebf4b60eedb"
   }
 ]
