@@ -95,3 +95,14 @@
 
 - 2026-11-17 — облачная публикация auto-2026-11-16-unique-clients: https://www.instagram.com/reel/Df0H0fkiei9/
   media_id=18117251981166969
+
+
+## 2026-11-17 — AE02 realistic_screens_v2 опубликован напрямую
+- По поручению «Запускай публикацию», message_id 01a1e7f7-cfaa-7611-86f9-193f0c6ff44a основного чата 01a1d521-6a1c-7411-9f65-2c57ab750416. Текущие шесть JPEG и MP4 показаны в msg_079f16b816d6e559016afbe4d49f2087d2965f4f5f920390f6.
+- Карусель: https://www.instagram.com/p/Df1Lwn-lSc5/ ; media_id=18083033678763100; 10:30:43 Asia/Yekaterinburg. Подтверждены шесть IMAGE и подпись.
+- Затем Reels: https://www.instagram.com/reel/Df1MBVAqecg/ ; media_id=18170227567488261; 10:33:06 Asia/Yekaterinburg. Подтверждены REELS и подпись с раскрытием синтеза речи.
+- Комментарии с хештегами: 18132494677701346, 18123567205984531. check_release.cjs пройден, JPEG и видео хеши сверены после передачи. Видео SHA-256 cbffe7592e5081822f31078dde009bd78f5f435abaac5f394bf7e85901ea56f7. Произношение агентом не прослушано.
+- Локальный PUBLICATION_STATUS.md сохранён в realistic_screens_v2. Очередь и расписание не изменялись; выпуск не отправлять повторно.
+
+## Проверка облачного генератора после сбоя 16.11
+- Однократно повторён Instagram content replenishment с max_generate=2, run https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/43899725283 . Итог failure: Speech synthesis failed at scene 4: NoAudioReceived. Повтор подтверждён по состоянию run и .cloud/generator.json, дальнейшие слепые перезапуски не выполнялись. Готовые записи не заменялись; банк на проверке 16.11 содержал 14 неиспользованных коротких сценариев и 6 уроков. Это сбой пополнения, а не свидетельство потери доступа к Instagram.
