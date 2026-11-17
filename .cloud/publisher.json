@@ -1,6 +1,7 @@
 {
-  "status": "failed",
-  "message": "GitHub HTTP 422",
-  "updated_at": "2026-11-18T00:55:43.849835+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/44163777394"
+  "status": "published",
+  "reel_id": "auto-2026-11-17-sort-filter",
+  "permalink": "https://www.instagram.com/reel/Df2uyJcTkn_/",
+  "updated_at": "2026-11-18T02:45:33.473474+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/44183068249"
 }
