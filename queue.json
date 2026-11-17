@@ -442,7 +442,7 @@
   {
     "id": "auto-2026-11-17-sort-filter",
     "date": "2026-11-17",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Только долги — сразу от большего к меньшему",
     "source_topic": "sort-filter",
@@ -462,7 +462,10 @@
       "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
-    "sha256": "9fabd5d9c91addbb1100f8f3104551434638b219ddf51c06cb17dee27f0ef346"
+    "sha256": "9fabd5d9c91addbb1100f8f3104551434638b219ddf51c06cb17dee27f0ef346",
+    "media_id": "18181386727434949",
+    "permalink": "https://www.instagram.com/reel/Df2uyJcTkn_/",
+    "published_date": "2026-11-18"
   },
   {
     "id": "auto-2026-11-18-query-summary",
