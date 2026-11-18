@@ -117,3 +117,6 @@
 
 - 2026-11-18 — облачная публикация auto-2026-11-17-sort-filter: https://www.instagram.com/reel/Df2uyJcTkn_/
   media_id=18181386727434949
+
+- 2026-11-19 — облачная публикация auto-2026-11-18-query-summary: https://www.instagram.com/reel/Df5QTP1hl75/
+  media_id=18398702290163518
