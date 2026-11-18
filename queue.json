@@ -470,7 +470,7 @@
   {
     "id": "auto-2026-11-18-query-summary",
     "date": "2026-11-18",
-    "status": "ready",
+    "status": "published",
     "format": "lesson",
     "title": "QUERY: сводим продажи по менеджерам",
     "source_topic": "query-summary",
@@ -490,7 +490,10 @@
       "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
-    "sha256": "ca43e686bea1a3c785fcaff59e09db0acd2c76bbdb5a69059b0d4ee04ac4b1df"
+    "sha256": "ca43e686bea1a3c785fcaff59e09db0acd2c76bbdb5a69059b0d4ee04ac4b1df",
+    "media_id": "18398702290163518",
+    "permalink": "https://www.instagram.com/reel/Df5QTP1hl75/",
+    "published_date": "2026-11-19"
   },
   {
     "id": "auto-2026-11-19-payment-due-status",
