@@ -700,5 +700,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "aafc359cdb26b590186e9aa5c1920d2beb984b8c3abfa50812ac1988a621d5ac"
+  },
+  {
+    "id": "auto-2026-11-26-growth-base",
+    "date": "2026-11-26",
+    "status": "ready",
+    "format": "short",
+    "title": "Рост выручки: считаем от правильной базы",
+    "source_topic": "growth-base",
+    "topic_hash": "c4e361b8de62ec06a1136b6d3fdd090b25fdcc37aedce048c65afd1144a12590",
+    "video": "reels/auto-2026-11-26-growth-base.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-26-growth-base.mp4",
+    "caption": "Рост выручки: считаем от правильной базы\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ B2 введите прошлую выручку 100000. В C2 — текущую 120000. Формулу вводим в D2 и ставим формат Процент.\n\n=IF(B2=0;\"нет базы\";C2/B2-1)\n\n120000 / 100000 − 1 = 20%. При B2, равном нулю, выводим «нет базы».\n\nПри нулевой базе процент роста не определён. Для отрицательной базы нужна отдельная интерпретация, обычная формула может вводить в заблуждение.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 49.83,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "f603da0f0f1d473988620fee85a5fcbb29584897c653b474c8cfc0c1f09cb424"
   }
 ]
