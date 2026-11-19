@@ -728,5 +728,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "f603da0f0f1d473988620fee85a5fcbb29584897c653b474c8cfc0c1f09cb424"
+  },
+  {
+    "id": "auto-2026-11-27-textjoin-name",
+    "date": "2026-11-27",
+    "status": "ready",
+    "format": "short",
+    "title": "Собираем ФИО без лишнего пробела",
+    "source_topic": "textjoin-name",
+    "topic_hash": "adc1a95f32adeed24a544541426b514097634414d7a476947e88661bcc65333e",
+    "video": "reels/auto-2026-11-27-textjoin-name.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-27-textjoin-name.mp4",
+    "caption": "Собираем ФИО без лишнего пробела\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ A2 запишите Иванов, в B2 — Иван. C2 оставьте пустой. Формулу введите в D2.\n\n=TEXTJOIN(\" \";TRUE;A2:C2)\n\nПолучаем «Иванов Иван». Добавьте в C2 Иванович — получим полное ФИО.\n\nTRUE пропускает пустые ячейки, но ячейка с обычным пробелом пустой не является. При необходимости сначала очистите исходные данные.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 46.25,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "7436c25dfc3aab8f86b81e1a2aada6546a2b2edf48e92172ba062276d0c5dfa0"
   }
 ]
