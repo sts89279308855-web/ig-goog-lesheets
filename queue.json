@@ -498,7 +498,7 @@
   {
     "id": "auto-2026-11-19-payment-due-status",
     "date": "2026-11-19",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Оплата сегодня. Уже просрочка?",
     "source_topic": "payment-due-status",
@@ -518,7 +518,10 @@
       "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
-    "sha256": "520e65b4709bb2bd77a5c899de8e408950129cee8af85a5a3056f230f95dec47"
+    "sha256": "520e65b4709bb2bd77a5c899de8e408950129cee8af85a5a3056f230f95dec47",
+    "media_id": "17903261820387143",
+    "permalink": "https://www.instagram.com/reel/Df71lkrBq3i/",
+    "published_date": "2026-11-20"
   },
   {
     "id": "auto-2026-11-20-date-text-check",
