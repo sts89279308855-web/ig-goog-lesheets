@@ -756,5 +756,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "7436c25dfc3aab8f86b81e1a2aada6546a2b2edf48e92172ba062276d0c5dfa0"
+  },
+  {
+    "id": "auto-2026-11-28-month-key",
+    "date": "2026-11-28",
+    "status": "ready",
+    "format": "short",
+    "title": "Дата в отчёте: выделяем месяц",
+    "source_topic": "month-key",
+    "topic_hash": "96917cdc3de816adb1959f5128b0fd9dbcd6b3ae5337f88ffcd077aab2bc3ccb",
+    "video": "reels/auto-2026-11-28-month-key.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-28-month-key.mp4",
+    "caption": "Дата в отчёте: выделяем месяц\n\nУчебный пример. Google Таблицы, русская локаль, разделитель аргументов — точка с запятой. Названия функций в формулах ниже — английские.\n\nВ A2 введите настоящую дату 01.11.2026. В B2 разместите формулу.\n\n=TEXT(A2;\"yyyy-mm\")\n\nДля 1 ноября 2026 года получаем 2026-11. Для 5 декабря — 2026-12.\n\nTEXT возвращает текст, а не дату. Для дальнейшей арифметики храните исходную дату отдельно. Формат yyyy-mm удобен для сортировки месяцев по порядку.\n\nСохраните и повторите. Нужен учёт для малого бизнеса? Напишите в Direct «ЗАДАЧА» — оценю задачу.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 50.67,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "477220669149dc6fa65b11b4967bc9e640a28bffd3ea01d4d2293e146ac06e3b"
   }
 ]
