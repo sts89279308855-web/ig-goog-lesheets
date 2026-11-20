@@ -526,7 +526,7 @@
   {
     "id": "auto-2026-11-20-date-text-check",
     "date": "2026-11-20",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Какая из двух дат настоящая?",
     "source_topic": "date-text-check",
@@ -546,7 +546,10 @@
       "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
-    "sha256": "3b51c520bd4139f57853dcd6cf1fe697f02febc61818b2bf0daa8b68ba895c02"
+    "sha256": "3b51c520bd4139f57853dcd6cf1fe697f02febc61818b2bf0daa8b68ba895c02",
+    "media_id": "18120626719797329",
+    "permalink": "https://www.instagram.com/reel/Df-X6R7TxZz/",
+    "published_date": "2026-11-21"
   },
   {
     "id": "auto-2026-11-21-sku-leading-zero",
