@@ -123,3 +123,6 @@
 
 - 2026-11-20 — облачная публикация auto-2026-11-19-payment-due-status: https://www.instagram.com/reel/Df71lkrBq3i/
   media_id=17903261820387143
+
+- 2026-11-21 — облачная публикация auto-2026-11-20-date-text-check: https://www.instagram.com/reel/Df-X6R7TxZz/
+  media_id=18120626719797329
