@@ -1,7 +1,6 @@
 {
-  "status": "published",
-  "reel_id": "auto-2026-11-21-sku-leading-zero",
-  "permalink": "https://www.instagram.com/reel/DgBDIs-TDik/",
-  "updated_at": "2026-11-22T01:06:32.532644+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/44944343660"
+  "status": "skipped_already_posted_today",
+  "date": "2026-11-22",
+  "updated_at": "2026-11-22T02:05:40.693078+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/44949710144"
 }
