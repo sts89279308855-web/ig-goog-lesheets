@@ -133,3 +133,6 @@
 - Подтверждена реальная публикация https://www.instagram.com/reel/Df-X6R7TxZz/ 21.11 в 00:10:08 Asia/Yekaterinburg; повторная публикация не выполнялась. Облачный генератор подготовил ready до 29.11 включительно.
 - Проверены числовые модели CEILING 24/24/0, RANK 1/3/1 и 1/3/2, расчёт 1200→1600; непосредственно в Google Таблицах не исполнялось. Синтаксис сверён по https://support.google.com/docs/answer/3093471 , https://support.google.com/docs/answer/3094098 , https://support.google.com/docs/answer/3093313 , https://support.google.com/docs/answer/6270316 .
 - Проверены 63 состояния 21 сцены через актуальный cloud_render.frame, строки кода до 40 символов; подписи до 2200, по 4 хештега отдельным комментарием; синтетическая озвучка раскрыта. Урок 210 слов; окончательную длительность определит рендер. Новые сценарии не объявлены ready.
+
+- 2026-11-22 — облачная публикация auto-2026-11-21-sku-leading-zero: https://www.instagram.com/reel/DgBDIs-TDik/
+  media_id=18491991673116015
