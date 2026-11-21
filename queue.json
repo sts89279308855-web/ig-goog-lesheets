@@ -554,7 +554,7 @@
   {
     "id": "auto-2026-11-21-sku-leading-zero",
     "date": "2026-11-21",
-    "status": "ready",
+    "status": "published",
     "format": "short",
     "title": "Куда делись нули в артикуле?",
     "source_topic": "sku-leading-zero",
@@ -574,7 +574,10 @@
       "speech_tempo": 1,
       "synthetic_media_disclosed": true
     },
-    "sha256": "6027a3ab1f390e662943590498697b616fa0d62db4be34091bad1bef993cc7f6"
+    "sha256": "6027a3ab1f390e662943590498697b616fa0d62db4be34091bad1bef993cc7f6",
+    "media_id": "18491991673116015",
+    "permalink": "https://www.instagram.com/reel/DgBDIs-TDik/",
+    "published_date": "2026-11-22"
   },
   {
     "id": "rita-ig01-weekly-report",
