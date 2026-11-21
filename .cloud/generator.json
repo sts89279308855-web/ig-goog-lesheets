@@ -1,10 +1,8 @@
 {
-  "status": "generated",
-  "generated": [
-    "auto-2026-11-29-dropdown-catalog"
-  ],
+  "status": "up_to_date",
+  "generated": [],
   "stock_days": 8,
-  "remaining_topics": 16,
-  "updated_at": "2026-11-21T14:57:54.444326+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/44891909377"
+  "remaining_topics": 20,
+  "updated_at": "2026-11-21T20:41:58.982566+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/44920512442"
 }
