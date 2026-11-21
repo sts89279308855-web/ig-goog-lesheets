@@ -784,5 +784,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "477220669149dc6fa65b11b4967bc9e640a28bffd3ea01d4d2293e146ac06e3b"
+  },
+  {
+    "id": "auto-2026-11-29-dropdown-catalog",
+    "date": "2026-11-29",
+    "status": "ready",
+    "format": "lesson",
+    "title": "Как молоко раздвоилось в отчёте",
+    "source_topic": "dropdown-catalog",
+    "topic_hash": "b9c9e4b79a41c3e0677baf711a9aa6c9962129b7be30a974cf7187a584025547",
+    "video": "reels/auto-2026-11-29-dropdown-catalog.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-11-29-dropdown-catalog.mp4",
+    "caption": "Как молоко раздвоилось в отчёте\n\nУчебный пример. Google Таблицы, русская локаль, английские имена функций.\n\nСотрудник записал «Молоко 1л», а в справочнике «Молоко». В отчёте появились две позиции.\nВ E2:E4 внесите Молоко, Хлеб, Чай. В B2 внесите Молоко 1л.\nДобавьте в B2:B выпадающий список из E2:E4. Включите отклонение новых значений вне списка.\nДля проверки старых записей вставьте формулу в C2. MATCH ищет запись из B2 в справочнике.\nНоль задаёт точное совпадение. ISNUMBER проверяет, вернулась ли позиция.\nПри значении Молоко 1л ответ «Вне списка». Выберите Молоко в B2. Теперь C2 покажет «ОК».\nПустая B2 тоже получит «Вне списка», если все три пункта справочника заполнены.\n\n=IF(ISNUMBER(MATCH(B2;$E$2:$E$4;0));\"ОК\";\"Вне списка\")\n\nПерешлите тому, с кем ведёте общий склад.\n\nОзвучка — синтетическая. Визуальные вставки подготовлены с помощью ИИ по моим фотографиям.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 60.0,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "df46e0cfaa4c9cd1f9734a4bce92c2e3bcc137ffb40deda043df6b76fc35c7af"
   }
 ]
