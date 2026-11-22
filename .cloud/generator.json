@@ -1,8 +1,9 @@
 {
-  "status": "up_to_date",
-  "generated": [],
+  "status": "running",
+  "generated": [
+    "auto-2026-11-30-clean-controls"
+  ],
   "stock_days": 8,
-  "remaining_topics": 20,
-  "updated_at": "2026-11-21T20:41:58.982566+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/44920512442"
+  "updated_at": "2026-11-22T14:55:12.536154+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/45009727825"
 }
