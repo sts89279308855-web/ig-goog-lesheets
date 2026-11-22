@@ -641,7 +641,7 @@
   {
     "id": "auto-2026-11-22-xlookup-left",
     "date": "2026-11-22",
-    "status": "ready",
+    "status": "published",
     "format": "lesson",
     "title": "Ищем товар по артикулу: поиск влево",
     "source_topic": "xlookup-left",
@@ -661,7 +661,10 @@
       "speech_tempo": 1.0,
       "synthetic_media_disclosed": true
     },
-    "sha256": "19898683a15318deea13c14a0e08b1eef5709e6a6a475520e4a7749b36f07389"
+    "sha256": "19898683a15318deea13c14a0e08b1eef5709e6a6a475520e4a7749b36f07389",
+    "media_id": "17965162028998722",
+    "permalink": "https://www.instagram.com/reel/DgDpm3SvP_Q/",
+    "published_date": "2026-11-23"
   },
   {
     "id": "auto-2026-11-24-reorder-threshold",
