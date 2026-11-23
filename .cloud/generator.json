@@ -1,8 +1,9 @@
 {
-  "status": "up_to_date",
-  "generated": [],
+  "status": "running",
+  "generated": [
+    "auto-2026-12-01-len-check"
+  ],
   "stock_days": 8,
-  "remaining_topics": 20,
-  "updated_at": "2026-11-22T20:45:43.184896+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/45039995343"
+  "updated_at": "2026-11-23T16:01:20.288903+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/45160176351"
 }
