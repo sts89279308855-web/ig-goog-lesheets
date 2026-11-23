@@ -1,6 +1,6 @@
 {
-  "status": "skipped_already_posted_today",
-  "date": "2026-11-23",
-  "updated_at": "2026-11-23T03:27:59.079642+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/45077856371"
+  "status": "failed",
+  "message": "invalid literal for int() with base 10: 'FINISHED'",
+  "updated_at": "2026-11-24T00:31:17.294373+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/45249643077"
 }
