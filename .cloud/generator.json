@@ -1,9 +1,10 @@
 {
-  "status": "running",
+  "status": "generated",
   "generated": [
     "auto-2026-12-02-workdays-holiday"
   ],
   "stock_days": 8,
-  "updated_at": "2026-11-24T17:39:35.956532+05:00",
+  "remaining_topics": 19,
+  "updated_at": "2026-11-24T17:39:37.711571+05:00",
   "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/45395210479"
 }
