@@ -890,5 +890,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "a4de187854f11bba16e92b9a63453315ad91eb2163d37edab1c0cbdf4ec78a07"
+  },
+  {
+    "id": "auto-2026-12-03-left-prefix",
+    "date": "2026-12-03",
+    "status": "ready",
+    "format": "short",
+    "title": "Выделяем префикс артикула",
+    "source_topic": "left-prefix",
+    "topic_hash": "bbbcb1055bb8c1e0e3c8c372bccb81917a194a17550e5f949f10406a68067c24",
+    "video": "reels/auto-2026-12-03-left-prefix.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-12-03-left-prefix.mp4",
+    "caption": "Выделяем префикс артикула\n\nGoogle Таблицы, русская локаль, английские имена функций; разделитель — точка с запятой. Учебный пример.\n\nВ A2 разместите ABC-1042. Формулу вводим в B2.\n\n=LEFT(A2;3)\n\nРезультат: ABC.\n\nЗдесь префикс всегда занимает первые три символа. Если длина префикса меняется, фиксированная длина не подойдёт: сначала определите правило разделения.\n\nСохраните и повторите. Нужна автоматизация учёта? Напишите в Direct «ЗАДАЧА».\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 36.25,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "3585b5b511d9b9c7abeae23a95a32ba2426e01b69696dcf6c4962b5a703d8832"
   }
 ]
