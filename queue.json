@@ -915,5 +915,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "3585b5b511d9b9c7abeae23a95a32ba2426e01b69696dcf6c4962b5a703d8832"
+  },
+  {
+    "id": "auto-2026-12-04-right-code",
+    "date": "2026-12-04",
+    "status": "ready",
+    "format": "short",
+    "title": "Получаем последние цифры кода",
+    "source_topic": "right-code",
+    "topic_hash": "31b9e08cf6e38062ee4b05dbae0ec9271d7949632ee7057f8e79fe6384bba5c1",
+    "video": "reels/auto-2026-12-04-right-code.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-12-04-right-code.mp4",
+    "caption": "Получаем последние цифры кода\n\nGoogle Таблицы, русская локаль, английские имена функций; разделитель — точка с запятой. Учебный пример.\n\nВ A2 разместите Клиент-1042. Формулу вводим в B2.\n\n=RIGHT(A2;4)\n\nРезультат: 1042.\n\nRIGHT возвращает текст. Это сохраняет ведущие нули. Если у кода меняется длина, сначала согласуйте формат; последние четыре символа не всегда являются номером.\n\nСохраните и повторите. Нужна автоматизация учёта? Напишите в Direct «ЗАДАЧА».\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация #малыйбизнес",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 37.75,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "e3a61ba5ce2bc97fe1e13f180035358133b71ebd7dc22b503dbe706e6b375262"
   }
 ]
