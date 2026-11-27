@@ -1,10 +1,6 @@
 {
-  "status": "generated",
-  "generated": [
-    "auto-2026-12-04-right-code"
-  ],
-  "stock_days": 8,
-  "remaining_topics": 17,
-  "updated_at": "2026-11-26T16:03:22.396349+05:00",
-  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/45806764418"
+  "status": "failed",
+  "message": "Speech synthesis failed at scene 1: NoAudioReceived",
+  "updated_at": "2026-11-27T16:00:27.580277+05:00",
+  "run_url": "https://github.com/sts89279308855-web/ig-goog-lesheets/actions/runs/45986599356"
 }
