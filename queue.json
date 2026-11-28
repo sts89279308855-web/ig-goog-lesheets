@@ -965,5 +965,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "44fec260f2ae6fbaff20cc56dc0f6c69afce7c435c5d8a9b6042bde2ee257951"
+  },
+  {
+    "id": "auto-2026-12-06-date-age-complete",
+    "date": "2026-12-06",
+    "status": "ready",
+    "format": "lesson",
+    "title": "Сколько полных месяцев прошло?",
+    "source_topic": "date-age-complete",
+    "topic_hash": "df91784bcd7ec172574201a3af49d825b3f91d1ce10ea0713d54d1a5dfc043b7",
+    "video": "reels/auto-2026-12-06-date-age-complete.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-12-06-date-age-complete.mp4",
+    "caption": "Сколько полных месяцев прошло?\n\nУчебный пример. Google Таблицы, русская локаль, английские имена функций.\n\nПодписку оформили пятнадцатого января. К четырнадцатому апреля прошло сколько полных месяцев?\nВ A2 введите 15.01.2026. В B2 введите 14.04.2026. Обе ячейки должны содержать даты.\nВ C2 вставьте формулу. Первый аргумент — дата начала. Второй — дата проверки.\nЕдиница M означает полные месяцы. До пятнадцатого апреля третий месяц ещё не завершился.\nДля четырнадцатого апреля получите 2. Замените B2 на 15.04.2026 и получите 3.\nЕсли конец раньше начала, формула вернёт ошибку. Сначала проверьте порядок дат.\n\n=DATEDIF(A2;B2;\"M\")\n\nПерешлите коллеге, который считает стаж по номерам месяцев.\n\nОзвучка — синтетическая. Визуальные вставки подготовлены с помощью ИИ по моим фотографиям.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 60.0,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "e88be48ea16d5ac043c67b9c163aeae666bd9fd3b037d937c06f805426d6f436"
   }
 ]
