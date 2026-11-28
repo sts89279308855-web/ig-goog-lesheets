@@ -940,5 +940,30 @@
       "synthetic_media_disclosed": true
     },
     "sha256": "e3a61ba5ce2bc97fe1e13f180035358133b71ebd7dc22b503dbe706e6b375262"
+  },
+  {
+    "id": "auto-2026-12-05-month-end",
+    "date": "2026-12-05",
+    "status": "ready",
+    "format": "short",
+    "title": "Когда закрывается февраль?",
+    "source_topic": "month-end",
+    "topic_hash": "e4a6846451206213917c65a3ec279e5cad58cda87437b3ff97a103bc3471adc7",
+    "video": "reels/auto-2026-12-05-month-end.mp4",
+    "video_raw_url": "https://raw.githubusercontent.com/sts89279308855-web/ig-goog-lesheets/main/reels/auto-2026-12-05-month-end.mp4",
+    "caption": "Когда закрывается февраль?\n\nУчебный пример. Google Таблицы, русская локаль, английские имена функций.\n\nA2: 10.02.2028. Введите дату, затем примените к ответу формат даты.\nEOMONTH берёт дату и число месяцев смещения. Ноль оставляет тот же месяц.\nРезультат — 29.02.2028. Замените дату на 10.02.2027, и получите 28.02.2027.\n\n=EOMONTH(A2;0)\n\nПерешлите тому, кто руками правит дату закрытия месяца.\n\nОзвучка — синтетическая.",
+    "hashtags": "#googleтаблицы #формулы #автоматизация",
+    "thumb_offset": 3000,
+    "validation": {
+      "duration": 37.5,
+      "width": 720,
+      "height": 1280,
+      "audio": "aac",
+      "layout_checks": "passed",
+      "voice": "ru-RU-SvetlanaNeural",
+      "speech_tempo": 1.0,
+      "synthetic_media_disclosed": true
+    },
+    "sha256": "44fec260f2ae6fbaff20cc56dc0f6c69afce7c435c5d8a9b6042bde2ee257951"
   }
 ]
